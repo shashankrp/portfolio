@@ -3,6 +3,7 @@ import "./globals.css";
 import Headers from "./headers";
 import Footer from "./footer";
 import Script from 'next/script'
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const metadata = {
   title: "Create Next App",
