@@ -3,20 +3,17 @@ import PropTypes from 'prop-types'
 
 function Footer(props) {
   return (
-    <ul className="nav fixed-bottom justify-content-center">
+    <div className='container-fluid fixed-bottom bg-gray-400'>
+    <ul className="nav justify-content-center">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Active</a>
+                    <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
+                    <a className="nav-link" href="#"><i className='bi bi-linkedin'></i></a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+    </ul>
+    {/* <p className='text-center'><i class="bi bi-c-circle"></i></p> */}
+    </div>
   )
 }
 
