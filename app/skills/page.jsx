@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
     return (
-        <div className='container-md text-wrap font-monospace pb-12 border-radius-md mt-4 w-md'>
+        <div className='container-md text-wrap font-monospace pb-12 border-radius-md mt-4 w-md font-bold'>
             <h1>Skills</h1>
             <div className='space-y-10'>
             <div className='place-self-auto pt-5'>

@@ -3,13 +3,13 @@ import React from 'react'
 function page(props) {
     return (
         <div className='container-md pt-3 w-auto text-wrap font-monospace pb-12 border-radius-md mt-4'>
-            <h1>Experience</h1>
+            <h1>Experience - (4 Yrs)</h1>
             {/* This is for adding Ellucian data */}
             <ul className='w-auto pr-4'>
                 <li>
                     <div className='row pt-4'>
                         <div className="col">
-                            <em><h4>Ellucian Higher Education System</h4></em>
+                            <em><h4>Ellucian Higher Education System - (2.5 Yrs)</h4></em>
                         </div> 
                         <div className="col text-end">
                             <strong><em>Bangalore</em></strong>
@@ -42,7 +42,7 @@ function page(props) {
                 <li>
                     <div className='row pt-4'>
                         <div className="col">
-                            <em><h4>Voicera Analytics Private Ltd</h4></em>
+                            <em><h4>Voicera Analytics Private Ltd - (1.5 Yrs)</h4></em>
                         </div> 
                         <div className="col text-end">
                             <strong><em>Bangalore</em></strong>
