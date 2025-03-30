@@ -1,8 +1,9 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 function page(props) {
+  const [isData, setIsData] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch('http://localhost:3000/api/contact', {
@@ -17,10 +18,12 @@ function page(props) {
       }
     }).then(res => res.json())
       .then(data => {
-        <div className="alert alert-primary" role="alert">
-          We have received your message, i will get back to you soon.
-        </div>
-        window.location.reload();
+        if (data) {
+          setIsData(true);
+        }
+        setTimeout(() => {
+          window.location.reload();
+        }, 5000);
         console.log(data);
       }).catch(err => {
         console.log("I am getting error while ", err);
@@ -29,6 +32,9 @@ function page(props) {
   return (
     <div className='container pt-4'>
       <h1>Submit the Below Form:</h1>
+      {isData && <div className="alert alert-primary" role="alert">
+        We have received your message, i will get back to you soon.
+      </div>}
       <form className="container mb-3 mt-20 self-center max-w-5xl" onSubmit={handleSubmit}>
         <div className="mb-3">
           <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email address" required></input>
