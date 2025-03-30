@@ -30,7 +30,7 @@ function page(props) {
       })
   }
   return (
-    <div className='container pt-4'>
+    <div className='container font-monospace my-container'>
       <h1>Submit the Below Form:</h1>
       {isData && <div className="alert alert-primary" role="alert">
         We have received your message, i will get back to you soon.

@@ -12,7 +12,7 @@ function Headers(props) {
                 </button>
                 {/* Nav Section */}
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul className="navbar-nav px-45 px-md-0 justify-content-between flex-row">
+                    <ul className="navbar-nav px-45 px-md-0 justify-content-between flex-md-row">
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page1" href="/">Home</a>
                         </li>
