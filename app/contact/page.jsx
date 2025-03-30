@@ -35,7 +35,7 @@ function page(props) {
       {isData && <div className="alert alert-primary" role="alert">
         We have received your message, i will get back to you soon.
       </div>}
-      <form className="container mb-3 mt-20 self-center max-w-5xl" onSubmit={handleSubmit}>
+      <form className="container pt-4 text-center self-center max-w-5xl" onSubmit={handleSubmit}>
         <div className="mb-3">
           <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email address" required></input>
         </div>
