@@ -8,7 +8,7 @@ export default function Home() {
               <Image className='rounded shadow mx-auto d-block img-fluid mb-4' src={image} alt="background" />
               <div className="d-flex flex-md-column justify-center w-auto px-md-5 row" >
               <p className="pl-4 w-5/6 break-words fs-4" style={{textAlign: 'justify'}}>Hi my name is <b>Shashank</b> and am a <b>Software engineer</b> with <b>3+ years</b> of experience and currently working in <b>Ellucian.</b></p>
-              <a className="btn btn-primary" style={{alignSelf: "center"}} href="/skills">Know More</a>
+              <a className="btn btn-primary" style={{alignSelf: "center"}} href="./skills">Know More</a>
               </div>
             </div>
     </div>
