@@ -10,8 +10,8 @@ function Headers(props) {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav space-x-3">
+                <div className="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                    <ul className="navbar-nav px-45 px-md-0">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page1" href="/">Home</a>
                         </li>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Footer(props) {
   return (
-    <div className='container-fluid fixed-bottom bg-gray-400'>
+    <div className='container-fluid fixed-bottom bg-secondary text-white pt-2 pb-2'>
     <ul className="nav justify-content-center">
                 <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
