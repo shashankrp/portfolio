@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Headers from "./headers";
-import Footer from "./footer";
 import Script from 'next/script'
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
       <body> 
         <Headers />
         {children}
-        <Footer />
       </body>
     </html>
   );
