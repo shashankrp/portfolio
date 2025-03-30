@@ -2,7 +2,7 @@ import React from 'react'
 
 function page(props) {
     return (
-        <div className='container-md pt-3 w-auto text-wrap font-monospace pb-12 border-radius-md mt-4'>
+        <div className='container-md pt-3 px-5 w-auto text-wrap font-monospace pb-12 border-radius-md mt-4' style={{textAlign: 'justify'}}>
             <h1>Experience - (4 Yrs)</h1>
             {/* This is for adding Ellucian data */}
             <ul className='w-auto pr-4'>

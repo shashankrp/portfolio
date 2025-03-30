@@ -33,7 +33,7 @@ function Headers(props) {
                         </li>
                     </ul>
 
-                    <ul className="nav justify-content-end flex-row-reverse d-md-none">
+                    <ul className="nav justify-content-end flex-row-reverse d-lg-none">
                     <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
                     </li>
@@ -43,7 +43,7 @@ function Headers(props) {
                 </ul>
                 </div>
                 {/* Footer Section */}
-                <ul className="nav justify-content-end flex-row-reverse d-none d-sm-inline-flex">
+                <ul className="nav justify-content-end flex-row-reverse d-none d-lg-inline-flex">
                     <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
                     </li>
