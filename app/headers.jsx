@@ -12,7 +12,7 @@ function Headers(props) {
                 </button>
                 {/* Nav Section */}
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul className="navbar-nav px-45 px-md-0">
+                    <ul className="navbar-nav px-45 px-md-0 justify-content-between flex-md-row">
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page1" href="/">Home</a>
                         </li>
@@ -32,9 +32,18 @@ function Headers(props) {
                             <a className="nav-link active" aria-current="page6" href="/about">About</a>
                         </li>
                     </ul>
+
+                    <ul className="nav justify-content-end flex-row-reverse d-lg-none">
+                    <li className="nav-item">
+                        <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link active" href="#"><i className='bi bi-linkedin text-white'></i></a>
+                    </li>
+                </ul>
                 </div>
                 {/* Footer Section */}
-                <ul className="nav flex-row-reverse">
+                <ul className="nav justify-content-end flex-row-reverse d-none d-lg-inline-flex">
                     <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
                     </li>
