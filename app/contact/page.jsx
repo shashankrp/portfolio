@@ -6,7 +6,7 @@ function page(props) {
   const [isData, setIsData] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:3000/api/contact', {
+    fetch('./contact', {
       method: 'POST',
       body: JSON.stringify({
         email: e.target[0].value,
