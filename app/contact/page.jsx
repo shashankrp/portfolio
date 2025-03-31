@@ -48,9 +48,15 @@ function page(props) {
         <button type="submit" className="btn btn-primary mt-1 p-2">Submit</button>
       </form> */}
       <div className="container justify-self-center d-flex d-md-flex flex-column flex-md-row contact">
-        <i className="bi bi-github contact-i"></i>
-        <i className="bi bi-linkedin contact-i"></i>
-        <i className="bi bi-envelope-at-fill contact-i"></i>
+        <a href='https://github.com/shashankrp' target='_blank' className='text-black'>
+          <i className="bi bi-github contact-i"></i>
+        </a>
+        <a href='https://www.linkedin.com/in/shashank-r-p-5a866b15a/' target='_blank' className='text-black'>
+          <i className="bi bi-linkedin contact-i"></i>
+        </a>
+        <a href='mailto:me@sarav.co' target='_blank' className='text-black'>
+          <i className="bi bi-envelope-at-fill contact-i"></i>
+        </a>
       </div>
     </div>
   )
