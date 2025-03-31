@@ -36,16 +36,16 @@ function page(props) {
         We have received your message, i will get back to you soon.
       </div>}
       <form className="container pt-4 text-center self-center max-w-5xl" onSubmit={handleSubmit}>
-        <div className="mb-4 mt-5">
-          <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email address" required></input>
+        <div className="mb-4 mt-4">
+          <input type="email" className="form-control p-3" id="exampleFormControlInput1" placeholder="Email address" required></input>
         </div>
         <div className="mb-4">
-          <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Subject" required></input>
+          <input type="text" className="form-control p-3" id="exampleFormControlInput1" placeholder="Subject" required></input>
         </div>
         <div className="mb-4">
-          <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="3"></textarea>
+          <textarea className="form-control p-3" id="exampleFormControlTextarea1" placeholder="Description" rows="5"></textarea>
         </div>
-        <button type="submit" className="btn btn-primary mt-1">Submit</button>
+        <button type="submit" className="btn btn-primary mt-1 p-2">Submit</button>
       </form>
     </div>
   )
