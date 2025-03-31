@@ -35,20 +35,20 @@ function Headers(props) {
 
                     <ul className="nav justify-content-end flex-row-reverse d-lg-none">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
+                        <a className="nav-link active" target='_blank' aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link active" href="#"><i className='bi bi-linkedin text-white'></i></a>
+                        <a className="nav-link active" target='_blank' href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/"><i className='bi bi-linkedin text-white'></i></a>
                     </li>
                 </ul>
                 </div>
                 {/* Footer Section */}
                 <ul className="nav justify-content-end flex-row-reverse d-none d-lg-inline-flex">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
+                        <a className="nav-link active" target='_blank' aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link active" href="#"><i className='bi bi-linkedin text-white'></i></a>
+                        <a className="nav-link active" target='_blank' href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/"><i className='bi bi-linkedin text-white'></i></a>
                     </li>
                 </ul>
             </div>
