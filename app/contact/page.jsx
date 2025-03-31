@@ -32,10 +32,10 @@ function page(props) {
   return (
     <div className='container font-monospace my-container h-auto'>
       <h1>Contact me:</h1>
-      {isData && <div className="alert alert-primary" role="alert">
+      {/* {isData && <div className="alert alert-primary" role="alert">
         We have received your message, i will get back to you soon.
-      </div>}
-      <form className="container pt-4 text-center self-center max-w-5xl" onSubmit={handleSubmit}>
+      </div>} */}
+      {/* <form className="container pt-4 text-center self-center max-w-5xl" onSubmit={handleSubmit}>
         <div className="mb-4 mt-4">
           <input type="email" className="form-control p-3" id="exampleFormControlInput1" placeholder="Email address" required></input>
         </div>
@@ -46,7 +46,12 @@ function page(props) {
           <textarea className="form-control p-3" id="exampleFormControlTextarea1" placeholder="Description" rows="5"></textarea>
         </div>
         <button type="submit" className="btn btn-primary mt-1 p-2">Submit</button>
-      </form>
+      </form> */}
+      <div className="container justify-self-center d-flex d-md-flex flex-column flex-md-row contact">
+        <i className="bi bi-github contact-i"></i>
+        <i className="bi bi-linkedin contact-i"></i>
+        <i className="bi bi-envelope-at-fill contact-i"></i>
+      </div>
     </div>
   )
 }
