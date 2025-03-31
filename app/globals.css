@@ -75,4 +75,7 @@ p{
     overflow: auto;
     margin-right: 2rem;
   }
+  body{
+    overflow: auto;
+  }
 }
