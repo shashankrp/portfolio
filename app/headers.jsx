@@ -45,14 +45,8 @@ function Headers(props) {
                 {/* Footer Section */}
                 <ul className="nav justify-content-end flex-row-reverse d-none d-lg-inline-flex">
                     <li className="nav-item">
-                        <a className="nav-link active" target='_blank' aria-current="page" href="https://github.com/shashankrp"><i className="bi bi-github text-white"></i></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link active" target='_blank' href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/"><i className='bi bi-linkedin text-white'></i></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link active" target='_blank' href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
-                            <i className='bi bi-paperclip text-white'></i>
+                        <a className="nav-link d-flex" target='_blank' href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
+                            <i className='bi bi-paperclip text-white'></i><p className='fw-normal text-white h6 pt-1'>Resume</p>
                         </a>
                     </li>
                 </ul>
