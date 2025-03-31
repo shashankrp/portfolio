@@ -11,10 +11,10 @@ function page(props) {
         My goal is to create impactful solutions that solve real-world problems and contribute to the tech community.
       </p>
       <ul className='pt-2'>
-        <li className='pt-1 pb-2'><p><strong>Home:</strong> The landing page with an overview of my portfolio.</p></li>
-        <li className='pb-2'><p><strong>Projects:</strong> A showcase of my completed projects and case studies.</p></li>
-        <li className='pb-2'><p><strong>Blog:</strong> Articles and posts about my experiences and learnings.</p></li>
-        <li className='pb-2'><p><strong>Contact:</strong> A form and details to get in touch with me.</p></li>
+        <li className='pt-1 pb-1'><p><strong>Home:</strong> The landing page with an overview of my portfolio.</p></li>
+        <li className='pb-1'><p><strong>Projects:</strong> A showcase of my completed projects and case studies.</p></li>
+        <li className='pb-1'><p><strong>Blog:</strong> Articles and posts about my experiences and learnings.</p></li>
+        <li className='pb-1'><p><strong>Contact:</strong> A form and details to get in touch with me.</p></li>
       </ul>
     </div>
   )
