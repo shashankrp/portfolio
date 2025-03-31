@@ -8,8 +8,8 @@ export default function Home() {
               <Image className='rounded shadow mx-auto d-block img-fluid mb-4' src={image} alt="background" />
               <div className="d-flex flex-md-column justify-center w-auto px-md-5 row" >
                 <h1 className="pb-5 text-center font-monospace fw-bold"> Who am I?</h1>
-              <p className="pl-4 w-5/6 break-words fs-4" style={{textAlign: 'justify'}}>Hi my name is <strong><em>Shashank</em></strong> and am a <strong><em>Software engineer</em></strong> with <strong><em>4+ years</em></strong> of experience and currently working at <strong><em>Ellucian</em></strong>.</p>
-              <a className="btn btn-primary" style={{alignSelf: "center"}} href="./skills">Know More</a>
+              <p className="pl-4 w-5/6 break-words fs-4" style={{textAlign: 'justify'}}>Hello, I am <strong><em>Shashank</em></strong> and am a <strong><em>Software engineer</em></strong> with <strong><em>4+ years</em></strong> of experience in <strong><em>Full Stack Developer</em></strong> and currently working at <strong><em>Ellucian</em></strong>.</p>
+              <a className="btn btn-primary text-center fw-bold" href="./skills">Know More</a>
               </div>
             </div>
     </div>

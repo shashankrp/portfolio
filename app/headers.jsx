@@ -50,6 +50,11 @@ function Headers(props) {
                     <li className="nav-item">
                         <a className="nav-link active" target='_blank' href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/"><i className='bi bi-linkedin text-white'></i></a>
                     </li>
+                    <li className="nav-item">
+                        <a className="nav-link active" target='_blank' href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
+                            <i className='bi bi-paperclip text-white'></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
