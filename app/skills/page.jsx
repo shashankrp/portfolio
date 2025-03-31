@@ -6,7 +6,7 @@ function page() {
             <h1>Skills</h1>
             <div className='space-y-10'>
             {/* Next JS */}
-            <div className='place-self-auto pt-5 pb-5'>
+            <div className='place-self-auto pt-5 pb-3'>
                 <div className='col'>
                     <p>Next JS</p>
                 </div>
@@ -15,7 +15,7 @@ function page() {
                 </div>
             </div>
                 {/* React JS */}
-            <div className='place-self-auto pb-5'>
+            <div className='place-self-auto pb-3'>
                 <div className='col'>
                     <p>React JS</p>
                 </div>
@@ -24,7 +24,7 @@ function page() {
                 </div>
             </div>
             {/* Node JS */}
-            <div className='place-self-auto pb-5'>
+            <div className='place-self-auto pb-3'>
                 <div className='col'>
                     <p>Node JS</p>
                 </div>
@@ -33,7 +33,7 @@ function page() {
                 </div>
             </div>
             {/* Java */}
-            <div className='place-self-auto pb-5'>
+            <div className='place-self-auto pb-3'>
                 <div className='col'>
                     <p>Java</p>
                 </div>
@@ -42,7 +42,7 @@ function page() {
                 </div>
             </div>
             {/* Python */}
-            <div className='place-self-auto pb-5'>
+            <div className='place-self-auto pb-3'>
                 <div className='col'>
                     <p>Python</p>
                 </div>
