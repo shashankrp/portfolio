@@ -30,22 +30,22 @@ function page(props) {
       })
   }
   return (
-    <div className='container font-monospace my-container'>
-      <h1>Submit the Below Form:</h1>
+    <div className='container font-monospace my-container h-auto'>
+      <h1>Contact me:</h1>
       {isData && <div className="alert alert-primary" role="alert">
         We have received your message, i will get back to you soon.
       </div>}
       <form className="container pt-4 text-center self-center max-w-5xl" onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div className="mb-4 mt-5">
           <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Email address" required></input>
         </div>
-        <div className="mb-3">
+        <div className="mb-4">
           <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Subject" required></input>
         </div>
-        <div className="mb-3">
+        <div className="mb-4">
           <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="3"></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary mt-1">Submit</button>
       </form>
     </div>
   )
