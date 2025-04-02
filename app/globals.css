@@ -93,16 +93,16 @@ p{
   border-radius: 5rem;
 }
 
-.fading-effect div,.experience ul, .contact-fade div, .about p, .about ul ,.skills div{
+.fading-effect div,.experience-container ul, .contact-fade div, .about-container p, .about-container ul ,.skills-container div{
   animation: fadeInFromTop 2s ease-in-out;
 }
 
-.about p{
+.about-container p{
   padding-top: 1rem;
   font-weight: 530;
 }
 
-.about ul{
+.about-container ul{
   padding-bottom: 5rem;
 }
 

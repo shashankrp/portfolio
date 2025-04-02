@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
     return (
-        <div className='container-md text-wrap font-monospace pb-12 border-radius-md w-md font-bold my-container h-auto skills'>
+        <div className='container-md text-wrap font-monospace pb-12 border-radius-md w-md font-bold my-container h-auto skills-container'>
             <h1>Skills</h1>
             <div className='py-10'>
             {/* Next JS */}
