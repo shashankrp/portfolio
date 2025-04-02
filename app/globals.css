@@ -80,7 +80,11 @@ p{
 }
 
 .fading-effect {
-  animation: fadeInFromTop 1s ease-in-out;
+  animation: fadeInFromTop 0.5s ease-in-out;
+}
+
+.fading-effect div,.experience ul, .contact-fade div, .about p, .about ul ,.skills div{
+  animation: fadeInFromTop 2s ease-in-out;
 }
 
 @keyframes fadeInFromTop {

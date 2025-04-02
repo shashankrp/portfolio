@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function page(props) {
   return (
-    <div className='container font-monospace my-container ml-4 w-5xl h-auto fading-effect'>
+    <div className='container font-monospace my-container ml-4 w-5xl h-auto fading-effect about'>
       <h1>About Page</h1>
       <p className='pt-4' style={{textAlign: 'justify'}}>
         This is my portfolio where I am displaying all my skills and experience, showcasing who I am. 
