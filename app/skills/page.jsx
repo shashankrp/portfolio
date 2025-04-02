@@ -2,11 +2,11 @@ import React from 'react'
 
 function page() {
     return (
-        <div className='container-md text-wrap font-monospace pb-12 border-radius-md w-md font-bold my-container h-auto'>
+        <div className='container-md text-wrap font-monospace pb-12 border-radius-md w-md font-bold my-container h-auto skills'>
             <h1>Skills</h1>
-            <div className='space-y-10'>
+            <div className='py-10'>
             {/* Next JS */}
-            <div className='place-self-auto pt-4 pb-3'>
+            <div className='place-self-auto pt-4 pb-xl-5 pb-4'>
                 <div className='col'>
                     <p>Next JS</p>
                 </div>
@@ -15,7 +15,7 @@ function page() {
                 </div>
             </div>
                 {/* React JS */}
-            <div className='place-self-auto pb-3'>
+            <div className='place-self-auto pb-xl-5 pb-4'>
                 <div className='col'>
                     <p>React JS</p>
                 </div>
@@ -24,7 +24,7 @@ function page() {
                 </div>
             </div>
             {/* Node JS */}
-            <div className='place-self-auto pb-3'>
+            <div className='place-self-auto pb-xl-5 pb-4'>
                 <div className='col'>
                     <p>Node JS</p>
                 </div>
@@ -33,7 +33,7 @@ function page() {
                 </div>
             </div>
             {/* Java */}
-            <div className='place-self-auto pb-3'>
+            <div className='place-self-auto pb-xl-5 pb-4'>
                 <div className='col'>
                     <p>Java</p>
                 </div>
@@ -42,7 +42,7 @@ function page() {
                 </div>
             </div>
             {/* Python */}
-            <div className='place-self-auto pb-3'>
+            <div className='place-self-auto pb-xl-5 pb-4'>
                 <div className='col'>
                     <p>Python</p>
                 </div>

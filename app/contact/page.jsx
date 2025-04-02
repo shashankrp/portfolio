@@ -30,7 +30,7 @@ function page(props) {
       })
   }
   return (
-    <div className='container font-monospace my-container h-auto'>
+    <div className='container font-monospace my-container h-auto fading-effect contact-fade'>
       <h1>Contact me:</h1>
       {/* {isData && <div className="alert alert-primary" role="alert">
         We have received your message, i will get back to you soon.

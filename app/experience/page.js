@@ -2,7 +2,7 @@ import React from 'react'
 
 function page(props) {
     return (
-        <div className='container-md w-auto text-wrap font-monospace border-radius-md my-container'>
+        <div className='container-md w-auto text-wrap font-monospace border-radius-md my-container experience'>
             <h1>Experience - (4 Yrs)</h1>
             {/* This is for adding Ellucian data */}
             <ul className='w-auto pr-4'>
