@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 function Headers(props) {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div className="container-fluid">
+            <div className="container-fluid header-nav">
                 <a className="navbar-brand" href="/">Shashank RP</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@ function Headers(props) {
                 <ul className="nav justify-content-end flex-row-reverse d-none d-lg-inline-flex">
                     <li className="nav-item">
                         <a className="nav-link d-flex" target='_blank' href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
-                            <i className='bi bi-paperclip text-white'></i><p className='fw-normal text-white h6 pt-1'>Resume</p>
+                            <i className='bi bi-paperclip'></i><p className='fw-normal text-white h6 pt-1'>Resume</p>
                         </a>
                     </li>
                 </ul>
