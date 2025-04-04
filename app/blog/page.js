@@ -14,7 +14,7 @@ export default function page() {
                         </div>
                     </div>
             <p className='pt-4 text-justify'>
-                ChatGPT's is one of the most commonly used AI tool in the world and it is
+                ChatGPT&apos;s is one of the most commonly used AI tool in the world and it is
                 used by many people for many purposes. It is used for writing, coding,
                 generating images, and many more. It is a great tool for people who are
                 looking for help in their work. For example, if you are a student and you are
@@ -27,7 +27,7 @@ export default function page() {
                 data that could be provided by you to the AI they could exactly predict
                 what you are doing or what you are thinking.
             </p>
-            <p className='pt-2 text-justify'>ChatGPT's native image generation capabilities were introduced since 
+            <p className='pt-2 text-justify'>ChatGPT&apos;s native image generation capabilities were introduced since 
                 the last update but people have become soo obsessed with one of its 
                 style which is <mark>Studio Ghibli-style images</mark> and they are 
                 enjyoing it a lot, but they are forgetting that its an AI. As AI are 
