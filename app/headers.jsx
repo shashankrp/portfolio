@@ -12,18 +12,19 @@ function Headers(props) {
                 </button>
                 {/* Nav Section */}
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    {/* for desktop view */}
                     <ul className="navbar-nav px-45 px-md-0 justify-content-between flex-md-row d-none d-lg-inline-flex">
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page1" href="./">Home</a>
                         </li>
-                        {/* <li className="nav-item">
-                            <a className="nav-link active" aria-current="page2" href="/about">Blog</a>
-                        </li> */}
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page3" href="./skills">Skills</a>
                         </li>
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page4" href="./experience">Experience</a>
+                        </li>
+                        <li className="nav-item px-2">
+                            <a className="nav-link active" aria-current="page2" href="/blog">Blog</a>
                         </li>
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page5" href="./contact">Contact</a>
@@ -32,19 +33,19 @@ function Headers(props) {
                             <a className="nav-link active" aria-current="page6" href="./about">About</a>
                         </li>
                     </ul>
-
+                    {/* for mobile view */}
                     <ul className="navbar-nav px-45 px-md-0 justify-content-between flex-md-row d-lg-none">
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page1" href="./">Home</a>
                         </li>
-                        {/* <li className="nav-item">
-                            <a className="nav-link active" aria-current="page2" href="/about">Blog</a>
-                        </li> */}
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page3" href="./skills">Skills</a>
                         </li>
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page4" href="./experience">Experience</a>
+                        </li>
+                        <li className="nav-item px-2">
+                            <a className="nav-link active" aria-current="page2" href="/blog">Blog</a>
                         </li>
                         <li className="nav-item px-2">
                             <a className="nav-link active" aria-current="page5" href="./contact">Contact</a>
@@ -54,7 +55,7 @@ function Headers(props) {
                         </li>
                         <li className="nav-item px-2">
                             <a className="nav-link d-flex font-monospace active" target='_blank' href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
-                                Resume &nbsp;<i className='bi bi-download align-content-end' style={{paddingLeft: "13rem"}}></i>
+                                Resume &nbsp;<i className='bi bi-download align-content-end' style={{ paddingLeft: "13rem" }}></i>
                             </a>
                         </li>
                     </ul>
