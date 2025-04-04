@@ -40,7 +40,7 @@ function page(props) {
           <i className="bi bi-linkedin contact-i"></i>
         </a>
         <a href='mailto:shashankrp2@gmail.com' target='_blank' className='text-black'>
-          <i className="bi bi-envelope-at-fill contact-i"></i>
+          <i className="bi bi-envelope-at-fill contact-i"></i> 
         </a>
       </div>
     </div>
