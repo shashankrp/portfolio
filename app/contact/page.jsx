@@ -54,7 +54,7 @@ function page(props) {
         <a href='https://www.linkedin.com/in/shashank-r-p-5a866b15a/' target='_blank' className='text-black'>
           <i className="bi bi-linkedin contact-i"></i>
         </a>
-        <a href='mailto:me@sarav.co' target='_blank' className='text-black'>
+        <a href='mailto:shashankrp2@gmail.com' target='_blank' className='text-black'>
           <i className="bi bi-envelope-at-fill contact-i"></i>
         </a>
       </div>
