@@ -9,9 +9,9 @@ export default function page() {
                         <div className="col">
                             <em><h3>GIT Best Practices</h3></em>
                         </div> 
-                        <div className="col text-end">
+                        {/* <div className="col text-end">
                             <strong><em>11-Apr-2025</em></strong>
-                        </div>
+                        </div> */}
                     </div>
             <p className='pt-4 blog-container'>
                 Git is a version control system that allows developers to track changes in their 
@@ -58,9 +58,9 @@ export default function page() {
                         <div className="col">
                             <em><h3>Ghibli-style image</h3></em>
                         </div> 
-                        <div className="col text-end">
+                        {/* <div className="col text-end">
                             <strong><em>11-Apr-2025</em></strong>
-                        </div>
+                        </div> */}
                     </div>
             <p className='pt-4 blog-container'>
                 ChatGPT&apos;s is one of the most commonly used AI tool in the world and it is
