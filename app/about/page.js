@@ -11,7 +11,7 @@ function page(props) {
         I’m a dedicated and passionate software engineer with over 4 years of professional experience in the tech industry, specializing in full-stack web development. My journey in the world of technology began with a curiosity about how things work behind the scenes, which evolved into a deep passion for building efficient, user-friendly applications.
         <br />
         <br />
-        Currently, I work at **Ellucian**, a leading global provider of higher education technology solutions, where I am able to utilize my skills to create impactful solutions for educational institutions. My role involves designing and developing scalable, reliable, and intuitive applications that meet the needs of users while aligning with business goals. This experience has taught me not only technical skills but also how to collaborate effectively with cross-functional teams to deliver high-quality products.
+        Currently, I work at <strong>Ellucian</strong>, a leading global provider of higher education technology solutions, where I am able to utilize my skills to create impactful solutions for educational institutions. My role involves designing and developing scalable, reliable, and intuitive applications that meet the needs of users while aligning with business goals. This experience has taught me not only technical skills but also how to collaborate effectively with cross-functional teams to deliver high-quality products.
         <br />
         <br />
         <h3>What I Do </h3><br />
