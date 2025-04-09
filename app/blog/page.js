@@ -18,16 +18,18 @@ export default function page() {
   return (
     <div className='container my-container'>
         <h1>Technical Blogs</h1>
+        <div className='pt-5'>
         {info.map((item, index) => (
-            <div key={index} className='pt-5'>
+            <div key={index} className='blog-items'>
                 <a href={item.url} className='bg-none text-black text-decoration-none pb-2'>
                     <h2>{item.title}</h2>
-                    <p className='pt-3 pb-2'>{item.description}</p>
+                    <p className='pt-3 pb-2' style={{textAlign: "justify"}}>{item.description}</p>
                     <strong>Read More...</strong>
                 </a>
-                <hr/>
+                <hr />
             </div>
         ))}
+    </div>
     </div>
   )
 }

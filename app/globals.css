@@ -95,6 +95,17 @@ p{
   text-align: justify;
 }
 
+.blog-items{
+  padding: 0 1rem 0 1rem;
+}
+
+.blog-items:hover{
+  background-color: azure;
+  border-radius: 25px;
+  transition: ease-in-out 0.5s;
+  padding: 1rem 1rem 0 1rem;
+}
+
 .fading-effect {
   animation: fadeInFromTop 0.5s ease-in-out;
   /* background-color: lightgray; */
