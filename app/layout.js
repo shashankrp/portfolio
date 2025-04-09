@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 
          {/* Google tag (gtag.js) */}
 
-{/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-KNSHEPXN7W" strategy="afterInteractive" />
+<Script src="https://www.googletagmanager.com/gtag/js?id=G-KNSHEPXN7W" strategy="afterInteractive" />
 
 <Script id="google-analytics" strategy="afterInteractive">
   {`
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 
   gtag("config", "G-KNSHEPXN7W")
   `}
-</Script> */}
+</Script>
       </head>
       <body>
         <Headers />
