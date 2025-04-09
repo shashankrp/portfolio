@@ -25,10 +25,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   overflow: auto;
   background-image: url(../public/assets/images/background.jpg);
-  background-size: 'inherit'; 
-  background-repeat: 'no-repeat'; 
-  background-position: 'left'; 
-  height: '100vh';
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
 }
 
 ul ul li:nth-child(1) {
@@ -36,14 +36,13 @@ ul ul li:nth-child(1) {
   padding-bottom: 1rem;
 }
 
-li{
+li {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 19px;
   text-align: justify;
 }
 
-h1{
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+h1 {
   font-size: 20px;
   font-weight: 530;
   line-height: 1.5;
@@ -52,7 +51,7 @@ h1{
   text-align: center;
 }
 
-h4{
+h4 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5;
   font-weight: 530;
@@ -61,28 +60,28 @@ h4{
   text-align: left;
 }
 
-.my-container{
+.my-container {
   margin-top: 2rem;
   font-weight: 530;
   color: #0a0a0a;
 }
 
-p{
+p {
   font-size: 20px;
   font-weight: 530;
 }
 
-.contact{
+.contact {
   margin-top: 10rem;
   justify-content: center;
   gap: 10rem;
 }
 
-.contact-i{
+.contact-i {
   font-size: 8rem;
 }
 
-#navbarNav ul > li > a:hover{
+#navbarNav ul > li > a:hover {
   color: black;
   background-color: #f8f9fa;
   border-radius: 5px;
@@ -91,15 +90,15 @@ p{
   font-size: 20px;
 }
 
-.blog-container{
+.blog-container {
   text-align: justify;
 }
 
-.blog-items{
+.blog-items {
   padding: 0 1rem 0 1rem;
 }
 
-.blog-items:hover{
+.blog-items:hover {
   background-color: azure;
   border-radius: 25px;
   transition: ease-in-out 0.5s;
@@ -108,7 +107,6 @@ p{
 
 .fading-effect {
   animation: fadeInFromTop 0.5s ease-in-out;
-  /* background-color: lightgray; */
   font-weight: 530;
   border-radius: 5rem;
 }
@@ -137,37 +135,30 @@ p{
   }
 }
 
-
 @media only screen and (max-width: 600px) {
-  .contact{ 
+  .contact {
     margin-top: 10px;
     gap: 1rem;
     align-items: center;
     flex-direction: column;
   }
-  .my-container{
+  .my-container {
     margin-right: 2rem;
   }
-  body{
-    overflow: auto;
-  }
-  p{
+  p {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .contact{ 
+  .contact {
     margin-top: 10px;
     gap: 0;
     align-items: center;
     flex-direction: column;
   }
-  .my-container{
+  .my-container {
     overflow: auto;
     margin-right: 2rem;
-  }
-  body{
-    overflow: auto;
   }
 }
