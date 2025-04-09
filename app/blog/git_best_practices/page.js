@@ -54,7 +54,7 @@ function page() {
             </li>
           </ol>
         </div>
-        <a href='./ghibli_style_images' className='background-none text-black text-decoration-none'>
+        <a href='../blog/ghibli_style_images' className='background-none text-black text-decoration-none'>
           <strong>Previous</strong><br/>
           <p>Ghibli Style Images</p>
         </a>

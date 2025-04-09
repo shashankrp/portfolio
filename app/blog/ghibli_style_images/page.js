@@ -46,7 +46,7 @@ return (
                                     <strong>Back</strong><br/>
                                     <p>Git Best Practices</p>
                             </a> */}
-                            <a href='./git_best_practices' className='background-none text-black text-decoration-none'>
+                            <a href='../blog/git_best_practices' className='background-none text-black text-decoration-none'>
                                     <strong>Next</strong><br/>
                                     <p>Git Best Practices</p>
                             </a>
