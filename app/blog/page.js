@@ -22,7 +22,7 @@ export default function page() {
             <div key={index} className='pt-5'>
                 <a href={item.url} className='bg-none text-black text-decoration-none pb-2'>
                     <h2>{item.title}</h2>
-                    <p className='pt-3 pb-2'>{item.description}</p>
+                    <p className='pt-3 pb-2' style={{textAlign: "justify"}}>{item.description}</p>
                     <strong>Read More...</strong>
                 </a>
                 <hr/>
