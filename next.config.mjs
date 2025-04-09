@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+const nextConfig = {
+    images: {
+        formats: ['image/avif', 'image/webp'],
+        domains: ['localhost', 'shashankrp.in'],
+    },
+};
 
 export default nextConfig;

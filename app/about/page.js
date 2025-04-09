@@ -5,6 +5,7 @@ function page(props) {
   return (
     <div className='container font-monospace my-container ml-4 w-5xl h-auto fading-effect about-container'>
       <h1>About Me</h1>
+
       <p className='pt-5 blog-container'>
 
         <strong>Hi, I’m Shashank RP.</strong><br /><br />
