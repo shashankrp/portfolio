@@ -3,6 +3,11 @@ import React from 'react'
 
 export default function page() {
     const info = ([
+        {
+            "url": "./blog/whatsapp_media",
+            "title": "WhatsApp May soon let you stop others from saving media to there devices",
+            "description": "WhatsApp is one of the most commonly used messaging app in the world and it is used by many people for many purposes. It is used for chatting, calling and sharing medias this also provides the feature of communicating with multiple people at a time.",
+        },
         {   
             "url": "./blog/ghibli_style_images",
             "title": "Ghibli Style Images",
