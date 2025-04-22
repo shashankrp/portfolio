@@ -29,9 +29,9 @@ return (
                             the chat exports.
                             <br /> <br />
                             For those unaware, WhatsApp currently allows users to export there chat hostory 
-                            with someone. But when the new feature rolls out, you won't be able to export the 
+                            with someone. But when the new feature rolls out, you won&apos;t be able to export the 
                             chat history of users that has the new privacy feature enabled. Another downside
-                            is that when advanced chat history is enabled, participants won't be able to use
+                            is that when advanced chat history is enabled, participants won&apos;t be able to use
                             Meta AI in any way. 
                             <br/><br/>
                             This would change the way that we are using the whatsapp.   
