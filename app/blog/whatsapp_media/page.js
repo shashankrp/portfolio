@@ -4,6 +4,7 @@ function page() {
 return (
     <div className='container my-container'>
         <div className='row pt-4'>
+                    <div className='pt-1 pb-5 blog-container'>
                     <div className='row pt-4'>
                                             <div className="col">
                                                     <em><h3>Whatsapp May soon let you stop others from saving media to there devices</h3></em>
@@ -12,7 +13,6 @@ return (
                                                     <strong><em>18-Apr-2025</em></strong>
                                             </div>
                                     </div>
-                    <p className='pt-4 pb-5 blog-container'>
                             WhatsApp is one of the most commonly used messaging app in the world and it is
                             used by many people for many purposes. It is used for chatting, calling and 
                             sharing medias this also provides the feature of communicating with multiple
@@ -35,16 +35,16 @@ return (
                             Meta AI in any way. 
                             <br/><br/>
                             This would change the way that we are using the whatsapp.   
-                    </p>
-                    <div className='d-flex justify-content-between'>
-                            <a href='./ghibli_style_images' className='background-none text-black text-decoration-none'>
+                    </div>
+                    <div className='pt-3 d-flex justify-content-between'>
+                            <a href='./ghibli_style_images' className='background-none text-black text-decoration-none blog-buttons'>
                                     <strong>Back</strong><br/>
                                     <p>Ghibli Style Images</p>
                             </a>
-                            {/* <a href='../blog/git_best_practices' className='background-none text-black text-decoration-none'>
+                            <a href='../blog/ai_making_us_stupid' className='background-none text-black text-decoration-none blog-buttons'>
                                     <strong>Next</strong><br/>
-                                    <p>Git Best Practices</p>
-                            </a> */}
+                                    <p>AI Makes Us Stupid</p>
+                            </a>
                     </div>
             </div>
     </div>

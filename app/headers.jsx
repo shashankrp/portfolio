@@ -1,8 +1,14 @@
-
+"use client"
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useRouter } from 'next/navigation'
 
 function Headers(props) {
+    const router = useRouter();
+    const handleNav = (e, path) => {
+        e.preventDefault();
+        router.push(path);
+    };
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div className="container-fluid header-nav">
@@ -15,22 +21,22 @@ function Headers(props) {
                     {/* for desktop view */}
                     <ul className="navbar-nav px-45 px-md-0 justify-content-between flex-md-row d-none d-lg-inline-flex">
                         <li className="nav-item px-2">
-                            <a className="nav-link active" aria-current="page1" href="./">Home</a>
+                            <a className="nav-link active" aria-current="page1" href="./" onClick={e => handleNav(e, '/')}>Home</a>
                         </li>
                         <li className="nav-item px-2">
-                            <a className="nav-link active" aria-current="page3" href="./skills">Skills</a>
+                            <a className="nav-link active" aria-current="page3" href="./skills" onClick={e => handleNav(e, '/skills')}>Skills</a>
                         </li>
                         <li className="nav-item px-2">
-                            <a className="nav-link active" aria-current="page4" href="./experience">Experience</a>
+                            <a className="nav-link active" aria-current="page4" href="./experience" onClick={e => handleNav(e, '/experience')}>Experience</a>
                         </li>
                         <li className="nav-item px-2">
-                            <a className="nav-link active" aria-current="page2" href="/blog">Blog</a>
+                            <a className="nav-link active" aria-current="page2" href="/blog" onClick={e => handleNav(e, '/blog')}>Blog</a>
                         </li>
                         <li className="nav-item px-2">
-                            <a className="nav-link active" aria-current="page5" href="./contact">Contact</a>
+                            <a className="nav-link active" aria-current="page5" href="./contact" onClick={e => handleNav(e, '/contact')}>Contact</a>
                         </li>
                         <li className="nav-item px-2">
-                            <a className="nav-link active" aria-current="page6" href="./about">About</a>
+                            <a className="nav-link active" aria-current="page6" href="./about" onClick={e => handleNav(e, '/about')}>About</a>
                         </li>
                     </ul>
                     {/* for mobile view */}

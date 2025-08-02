@@ -9,7 +9,7 @@ function page(props) {
                 <li>
                     <div className='row pt-4'>
                         <div className="col">
-                            <em><h4>Ellucian Higher Education System - (2.5 Yrs)</h4></em>
+                            <em><h4>Ellucian Higher Education System - (2.8 Yrs)</h4></em>
                         </div> 
                         <div className="col text-end">
                             <strong><em>Bangalore</em></strong>
@@ -27,14 +27,14 @@ function page(props) {
                     </div>
                     </li>
                     <li className="list-group-item text-justify">Environment Setup: Identify the specific partner requirements for their development and testing environments. Set up and configure the required development and testing environments. Ensure that partners have access to the necessary resources and documentation for their environments.</li>
-                    <li className="list-group-item text-justify">Testing API’s: Review the issue reports from partners and gather all relevant information. Develop and execute test cases to reproduce reported issues. Conduct rigorous testing to identify the root causes of the issues. Ensure that partners are informed of the testing progress and results.</li>
-                    <li className="list-group-item text-justify">Issue Resolution: Analyze the results of API testing to identify the root causes of the
+                    <li className="list-group-item text-justify">&nbsp;Testing API’s: Review the issue reports from partners and gather all relevant information. Develop and execute test cases to reproduce reported issues. Conduct rigorous testing to identify the root causes of the issues. Ensure that partners are informed of the testing progress and results.</li>
+                    <li className="list-group-item text-justify">&nbsp;Issue Resolution: Analyze the results of API testing to identify the root causes of the
                         issues. Prioritize issues based on their impact and urgency. Communicate with
                         partners to discuss the identified issues and possible solutions. Constantly update
                         partners on the progress of issue resolution. Validate that the issues are resolved to the
                         satisfaction of partners. Documenting the solutions and maintain a knowledge base for
                         future reference.</li>
-                    <li className="list-group-item text-justify">Working with our R & D team on developing pipelines and UI for the clients.</li>
+                    <li className="list-group-item text-justify">&nbsp;Working with our R & D team on developing pipelines and UI for the clients.</li>
                 </ul>
             </ul>
             {/* This is for adding Voicera data */}
@@ -59,11 +59,11 @@ function page(props) {
                         </div>
                     </div>
                     </li>
-                    <li className="list-group-item text-justify">Worked on the Spring MVC application on building a Voice Outbound Dialer
+                    <li className="list-group-item text-justify">&nbsp;Worked on the Spring MVC application on building a Voice Outbound Dialer
                     application contribution.</li>
-                    <li className="list-group-item text-justify">Worked on Many projects for the client as full stack web application.</li>
-                    <li className="list-group-item text-justify">Worked on AWS Lambda, EC2 Instances and S3 buckets.</li>
-                    <li className="list-group-item text-justify">And worked on an application with Avaya OD.</li>
+                    <li className="list-group-item text-justify">&nbsp;Worked on Many projects for the client as full stack web application.</li>
+                    <li className="list-group-item text-justify">&nbsp;Worked on AWS Lambda, EC2 Instances and S3 buckets.</li>
+                    <li className="list-group-item text-justify">&nbsp;And worked on an application with Avaya OD.</li>
                 </ul>
             </ul>
         </div>

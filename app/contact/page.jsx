@@ -30,7 +30,7 @@ function page(props) {
       })
   }
   return (
-    <div className='container font-monospace my-container h-auto contact-fade'>
+    <div className='container container-md font-monospace my-container h-auto contact-fade'>
       <h1>Contact me:</h1>
       <div className="container justify-self-center d-flex d-md-flex flex-column flex-md-row contact">
         <a href='https://github.com/shashankrp' target='_blank' className='text-black'>

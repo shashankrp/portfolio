@@ -4,24 +4,29 @@ import React from 'react'
 export default function page() {
     const info = ([
         {
+            "url": "./blog/ai_making_us_stupid",
+            "title": "How To Keep AI from Making Us Stupid",
+            "description": "AI has become central to much of what we do, but we rely on it more, we are bleeding related skills.",
+        },
+        {
             "url": "./blog/whatsapp_media",
             "title": "WhatsApp May soon let you stop others from saving media to there devices",
-            "description": "WhatsApp is one of the most commonly used messaging app in the world and it is used by many people for many purposes. It is used for chatting, calling and sharing medias this also provides the feature of communicating with multiple people at a time.",
+            "description": "WhatsApp is one of the most commonly used messaging app in the world and it is used by many people for many purposes.",
         },
         {   
             "url": "./blog/ghibli_style_images",
             "title": "Ghibli Style Images",
-            "description": "This is one of hot trend getting globaly viral on the social media as most of the people of using chatgpt to create this. As of chatgpt is not only a normal QA AI.",
+            "description": "This is one of hot trend getting globaly viral on the social media as most of the people of using chatgpt to create this.",
         },
         {
             "url": "./blog/git_best_practices",
             "title": "GIT Best Practices",
-            "description": "Git is a version control system that allows developers to track changes in their codebase. It is widely used in the software development industry and is an essential tool for any developer.",
+            "description": "Git is a version control system that allows developers to track changes in their codebase.",
         }
     ])
 
   return (
-    <div className='container my-container'>
+    <div className='container container-md my-container'>
         <h1>Technical Blogs</h1>
         <div className='pt-5'>
         {info.map((item, index) => (
