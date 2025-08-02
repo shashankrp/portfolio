@@ -4,6 +4,7 @@ function page() {
   return (
     <div className='container my-container'>
       <div className='row pt-4'>
+        <div className='pt-4 blog-container'>
         <div className='row pt-4'>
           <div className="col">
             <em><h3>GIT Best Practices</h3></em>
@@ -12,7 +13,6 @@ function page() {
               <strong><em>9-Apr-2025</em></strong>
           </div>
         </div>
-        <div className='pt-4 blog-container'>
           <p>
             Git is a version control system that allows developers to track changes in their 
             codebase. It is widely used in the software development industry and is an 
@@ -54,10 +54,19 @@ function page() {
             </li>
           </ol>
         </div>
-        <a href='../blog/ghibli_style_images' className='background-none text-black text-decoration-none'>
-          <strong>Previous</strong><br/>
-          <p>Ghibli Style Images</p>
-        </a>
+  
+
+        <div className='pt-3 d-flex justify-content-between'>
+                            <a href='#' className='background-none text-black text-decoration-none'>
+                                    
+                            </a>
+
+                            <a href='../blog/ghibli_style_images' className='background-none text-black text-decoration-none blog-buttons'>
+                                    <strong>Next</strong><br/>
+                                    <p>Ghibli Style Images</p>
+                            </a>
+                    </div>
+
       </div>
     </div>
   )

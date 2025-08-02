@@ -4,6 +4,7 @@ function page() {
 return (
     <div className='container my-container'>
         <div className='row pt-4'>
+                    <div className='pt-1 pb-5 blog-container'>
                     <div className='row pt-4'>
                                             <div className="col">
                                                     <em><h3>Ghibli-style images</h3></em>
@@ -12,7 +13,6 @@ return (
                                                     <strong><em>2-Apr-2025</em></strong>
                                             </div>
                                     </div>
-                    <p className='pt-4 pb-5 blog-container'>
                             ChatGPT&apos;s is one of the most commonly used AI tool in the world and it is
                             used by many people for many purposes. It is used for writing, coding,
                             generating images, and many more. It is a great tool for people who are
@@ -40,15 +40,15 @@ return (
                             who are looking for help in their work. But we should be careful 
                             while using it. We should not share our personal information with 
                             it.    
-                    </p>
-                    <div className='d-flex justify-content-between'>
-                            {/* <a href='./git_best_practices' className='background-none text-black text-decoration-none'>
+                    </div>
+                    <div className='pt-3 d-flex justify-content-between'>
+                            <a href='./git_best_practices' className='background-none text-black text-decoration-none blog-buttons'>
                                     <strong>Back</strong><br/>
                                     <p>Git Best Practices</p>
-                            </a> */}
-                            <a href='../blog/git_best_practices' className='background-none text-black text-decoration-none'>
+                            </a>
+                            <a href='../blog/whatsapp_media' className='background-none text-black text-decoration-none blog-buttons'>
                                     <strong>Next</strong><br/>
-                                    <p>Git Best Practices</p>
+                                    <p>WhatsApp Media</p>
                             </a>
                     </div>
             </div>
