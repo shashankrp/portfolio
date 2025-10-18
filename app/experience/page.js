@@ -34,7 +34,7 @@ function page(props) {
                         partners on the progress of issue resolution. Validate that the issues are resolved to the
                         satisfaction of partners. Documenting the solutions and maintain a knowledge base for
                         future reference.</li>
-                    <li className="list-group-item text-justify">&nbsp;Working with our R & D team on developing pipelines and UI for the clients.</li>
+                    <li className="list-group-item text-justify">&nbsp;Working with our R & D team on Development, Unit testing and preparing user guide pipelines and UI for the partners.</li>
                 </ul>
             </ul>
             {/* This is for adding Voicera data */}
