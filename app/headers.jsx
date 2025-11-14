@@ -69,7 +69,7 @@ function Headers(props) {
                 {/* Footer Section */}
                 <ul className="nav justify-content-end flex-row-reverse d-none d-lg-inline-flex">
                     <li className="nav-item">
-                        <a className="nav-link d-flex" target='_blank' href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
+                        <a className="nav-link d-flex resume-btn ms-auto" target='_blank' rel="noopener noreferrer" href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing">
                             <i className='bi bi-download text-white'></i>&nbsp;&nbsp;<p className='fw-normal font-monospace text-white h6 pt-1'>Resume</p>
                         </a>
                     </li>

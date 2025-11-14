@@ -19,7 +19,7 @@
   }
 }
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
@@ -29,29 +29,48 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   height: 100vh;
-}
-
-/* body {
-  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: auto;
-  min-height: 100vh;
-  /* Optional: add a subtle pattern overlay */
-  /* position: relative;
 } */
-
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   pointer-events: none;
   background: url("https://www.transparenttextures.com/patterns/cubes.png");
-  opacity: 0.08;
+  opacity: 0.07;
   z-index: 0;
+} */
+/* Animated pastel gradient background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+  background-size: 200% 200%;
+  animation: bgMove 12s ease-in-out infinite;
+  position: relative;
+  overflow-x: hidden;
 }
+
+/* Subtle SVG mesh overlay for depth */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.13;
+  background: url("data:image/svg+xml,%3Csvg width='800' height='600' viewBox='0 0 800 600' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' d='M0 0L800 600H0V0Z' fill='%23fcb69f'/%3E%3Cpath opacity='0.5' d='M800 0L0 600H800V0Z' fill='%23a1c4fd'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+/* Animate the gradient */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .container-md {
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(135deg, rgba(6,204,198,0.12), rgba(60,180,200,0.08));
+  /* background: rgba(255, 255, 255, 0.7); */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   backdrop-filter: blur(6px);
   border-radius: 24px;
@@ -124,7 +143,8 @@ p {
   text-align: justify;
   font-size: medium;
   padding-bottom: 2rem;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
+  background: linear-gradient(135deg, rgba(6,204,198,0.12), rgba(60,180,200,0.08));
   padding: 2rem;
   border-radius: 10px;
 }
@@ -202,4 +222,182 @@ p {
     overflow: auto;
     margin-right: 2rem;
   }
+}
+
+/* ...existing code... */
+
+.container-md.hero {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(6,204,198,0.12), rgba(60,180,200,0.08));
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(6,35,40,0.08);
+  position: relative;
+  overflow: visible;
+}
+
+/* left column (text) */
+.hero-left {
+  padding-right: 1.5rem;
+}
+
+/* large gradient title */
+.hero-left h1,
+.hero-left .hero-title {
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 0.95;
+  margin: 0 0 0.6rem 0;
+}
+
+/* subtitle / role */
+.hero-left p, .hero-left .lead {
+  color: rgba(10, 36, 38, 0.88);
+  font-size: 1.125rem;
+  max-width: 44rem;
+}
+
+/* image wrapper and framed image */
+.hero-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* space between frame and page */
+  border-radius: 28px; /* outer frame radius */
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+  box-shadow: 0 18px 40px rgba(6,35,40,0.12);
+  /* make sure the wrapper doesn't clip the shadow */
+  margin: 0 1rem;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 420px; /* adjust to your preferred size */
+  height: auto;
+  border-radius: 20px; /* inner image radius */
+  object-fit: cover; /* keeps image from looking pointy/stretchy */
+  box-shadow: inset 0 6px 18px rgba(0,0,0,0.06), 0 10px 30px rgba(6,35,40,0.14);
+  border: 6px solid rgba(255,255,255,0.6);
+}
+
+/* buttons styling inside hero */
+.container-md.hero .btn {
+  border-radius: 12px;
+  padding: 0.85rem 1.3rem;
+  font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+  .container-md.hero {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .hero-left {
+    text-align: left;
+    padding-right: 0;
+  }
+  .hero-left h1, .hero-left .hero-title {
+    font-size: 2.4rem;
+  }
+  .hero-image {
+    width: 84%;
+    border-radius: 18px;
+  }
+}
+
+/* ...existing code... */
+
+.resume-btn {
+  background: linear-gradient(90deg, #2ad3d0 0%, #3ad7d0 100%);
+  color: #fff !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(60,180,200,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+
+.resume-btn:hover {
+  background: linear-gradient(90deg, #3ad7d0 0%, #2ad3d0 100%);
+  color: #fff !important;
+}
+
+
+
+
+/* ...existing code... */
+
+/* Matrix Loader Overlay */
+.loader-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: #0f2027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+
+.matrix-loader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.matrix-bar {
+  width: 8px;
+  height: 60px;
+  background: linear-gradient(180deg, #39ff14 60%, #0f0 100%);
+  border-radius: 4px;
+  opacity: 0.85;
+  animation: matrix-fall 1.1s infinite;
+}
+
+.matrix-bar:nth-child(2) { animation-delay: 0.15s; }
+.matrix-bar:nth-child(3) { animation-delay: 0.3s; }
+.matrix-bar:nth-child(4) { animation-delay: 0.45s; }
+.matrix-bar:nth-child(5) { animation-delay: 0.6s; }
+.matrix-bar:nth-child(6) { animation-delay: 0.75s; }
+.matrix-bar:nth-child(7) { animation-delay: 0.9s; }
+
+@keyframes matrix-fall {
+  0% { transform: scaleY(0.3); opacity: 0.5; }
+  50% { transform: scaleY(1.2); opacity: 1; }
+  100% { transform: scaleY(0.3); opacity: 0.5; }
+}
+
+.loader-text {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #39ff14;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 0 8px #39ff14, 0 0 2px #0f0;
+  animation: fadeInFromTop 1.2s;
+}
+
+.hero-title-gradient {
+  background: none;
+  color: #111 !important;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 0.95;
+  margin: 0 0 0.6rem 0;
 }
