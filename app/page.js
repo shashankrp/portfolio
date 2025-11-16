@@ -153,10 +153,12 @@ export default function Home() {
             className="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
           />
         </div>
+
+        
   {/* Skills section */}
   <div className="mt-20 max-w-5xl mx-auto pt-54 mb-54 space-y-6" id="Skills"> 
     <h2 className='text-white text-center text-3xl font-semibold mb-6'>Skills</h2>
-      <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+      <div role="progressbar" aria-label='80' aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
   <div className="flex justify-between gap-4">
             <p>React JS</p>
     <span className="text-sm font-medium text-white-100">80%</span>
@@ -167,7 +169,7 @@ export default function Home() {
   </div>
 </div>
 
-<div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+<div role="progressbar" aria-label='50' aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
   <div className="flex justify-between gap-4 mt-2">
     <span className="text-sm font-medium text-white-900">Tailwind CSS</span>
 
@@ -179,7 +181,7 @@ export default function Home() {
   </div>
 </div>
 
-<div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+<div role="progressbar" aria-label='50' aria-valuenow="50" aria-valuemin="0" aria-valuemax="50">
   <div className="flex justify-between gap-4 mt-2">
     <p>AWS Services</p>
     <span className="text-sm font-medium text-white-900">50%</span>
@@ -190,7 +192,7 @@ export default function Home() {
   </div>
 </div>
 
-<div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+<div role="progressbar" aria-label='60' aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
   <div className="flex justify-between gap-4">
     <span className="text-sm font-medium text-white-900">Python</span>
 
