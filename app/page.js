@@ -10,29 +10,23 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import OutgoingMailIcon from '@mui/icons-material/OutgoingMail';
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Skills', href: '#Skills' },
-  { name: 'Experience', href: '#Experience' },
-  { name: 'Blog', href: '#Blog' },
-  { name: 'Contact', href: '#Contact' },
-  { name: 'About', href: '#About' },
+  { name: 'Home', href: '/' },
+  // { name: 'Skills', href: '/skills' },
+  // { name: 'Experience', href: '/experience' },
+  { name: 'Blog', href: '/blog' },
+  // { name: 'Contact', href: '/contact' },
+  // { name: 'About', href: '/about' },
 ]
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+      const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <div className="bg-gray-900">
-      {/* <header className="absolute inset-x-0 top-0 z-50"> */}
-        <header className="fixed inset-x-0 top-0 z-50">
+      {/* <header className="fixed inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Shashank R P</span>
-              {/* <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
-              /> */}
               Shashank R P
             </a>
           </div>
@@ -65,11 +59,6 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Shashank RP</span>
-                {/* <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  className="h-8 w-auto"
-                /> */}
                 Shashank R P
               </a>
               <button
@@ -94,14 +83,6 @@ export default function Home() {
                     </a>
                   ))}
                 </div>
-                {/* <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
-                  >
-                    Log in
-                  </a>
-                </div> */}
         <div
   className="flex justify-center gap-10 pt-6 fixed bottom-0 left-1/2 transform -translate-x-1/2 text-center"
 >
@@ -134,8 +115,7 @@ export default function Home() {
             </div>
           </DialogPanel>
         </Dialog>
-      </header>
-
+      </header> */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
@@ -149,7 +129,7 @@ export default function Home() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        {/* <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             
           </div>
@@ -158,18 +138,18 @@ export default function Home() {
               Who am i?
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-              Hello, my name is Shashank RP. I am a software engineer with over four years of experience in full-stack development, and i am currently working at Ellucian.
+              I am a software engineer with over four years of experience in full-stack development, and i am currently working at Ellucian.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#About"
+                href="/about"
                 className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Know more about me &rarr;
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-25rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-45rem)]"
@@ -183,9 +163,46 @@ export default function Home() {
           />
         </div>
 
-        
-  {/* Skills section */}
-  <div className="mt-20 max-w-5xl mx-auto pt-54 mb-54 space-y-6" id="Skills"> 
+
+<div className="flex flex-col md:flex-row mt-0 md:max-w-5xl md:mx-auto md:pt-34 md:space-y-6 md:gap-20 md:h-auto md:pb-8">
+  <div className="w-full flex justify-center md:justify-end m-auto">
+    <Image
+      className="rounded-2xl shadow img-fluid md:mb-4 hero-image drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]"
+      src={image}
+      alt="background"
+      width={400}
+      height={400}
+      placeholder="blur"
+    />
+  </div>
+  <div className="max-w-xl md:pt-8 md:text-2xl sm:text-2xl pt-5 pb-5 md:pb-23">
+    <strong>Hello, I'm Shashank R P</strong>
+    <br /><br />
+    <p className="font-mono">
+      I'm 4+ yrs experienced Full Stack Developer. Basically I can work with both ReactJS and NextJS and I specialize in ReactJS Development.
+      <br /><br />
+      Currently, I'm working as Software Engineer at Ellucian.
+    </p>
+  </div>
+</div>
+<div className='flex justify-center md:mt-10 gap-10 md:pt-6'>
+    <a href='https://github.com/shashankrp' target='_blank' className='text-black'>
+    <Icon component={GitHubIcon} style={{ fontSize: 65, color: 'white' }} />
+    </a>
+    <a href='https://www.linkedin.com/in/shashank-r-p-5a866b15a/' target='_blank' className='text-black'>
+    <Icon component={LinkedInIcon} style={{ fontSize: 70, color: 'white' }} />
+    </a>
+    <a href='mailto:shashankrp2@gmail.com' target='_blank' className='text-black'>
+    <Icon component={OutgoingMailIcon} style={{ fontSize: 70, color: 'white' }} />
+    </a>
+  </div>
+
+
+
+
+
+{/* Skills section */}
+ {/* <div className="mt-0 max-w-5xl mx-auto pt-54 mb-54 space-y-6" id="Skills"> 
     <h2 className='text-white text-center text-3xl font-semibold mb-6'>Skills</h2>
       <div role="progressbar" aria-label='80' aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
   <div className="flex justify-between gap-4">
@@ -232,52 +249,10 @@ export default function Home() {
     <div className="h-full rounded-full bg-red-600" style={{width: "60%"}}></div>
   </div>
 </div>
-</div>
-
-{/* Experience section */}
-<div className='mt-40 max-w-5xl mx-auto pt-20 pb-5' id='Experience'>
-  <h2 className='text-white text-center text-3xl font-semibold mb-6'>Experience - 4.5 Years</h2>
-  <div className='flex items-center justify-between'>
-  <h3 className='m-0 text-xl font-semibold'>Ellucian Higher Education System - 3 Years</h3>
-  <p className='m-0'>Bangalore</p>
-  </div>
-  
-  <div className='flex items-center justify-between'>
-    <p className='m-0'>Software Engineer 1</p>
-    <p className='m-0'>Nov 2022 - Present</p>
-  </div>
-  <ol className="list-decimal list-inside text-gray-300 space-y-2 text-justify">
-    <li className='pt-3'>Developed and enhanced Data Connect pipelines, implementing new features and optimizing existing workflows to support scalable and reliable data movement across systems.</li>
-    <li>Performed comprehensive unit testing (UT) for all pipeline components, ensuring code stability and compliance with development standards.</li>
-    <li>Prepared detailed Unit Test (UT) documentation, using clear technical writing and AI-assisted tools to improve documentation quality and consistency.</li>
-    <li>Collaborated closely with cross-functional teams, including developers, product owners, and QA engineers, to clarify requirements, validate functionality, and resolve pipeline-related issues.</li>
-    <li>Supported QA team in functional and regression testing, assisting in debugging, test case validation, and ensuring sprint deliverables met acceptance criteria.</li>
-    <li>Leveraged AI tools for debugging, documentation, and development acceleration, improving productivity and reducing turnaround time on complex tasks.</li>
-    <li>Delivered all tasks within sprint timelines, adhering to Agile methodologies and actively contributing to sprint planning, daily stand-ups, and retrospective discussions.</li>
-    <li>Proactively identified pipeline issues and proposed enhancements, contributing to improved performance, maintainability, and team efficiency.</li>
-  </ol>
-
-
-  <div className='flex items-center justify-between pt-25'>
-  <h3 className='m-0 text-xl font-semibold'>Voicera Analytics Pvt Ltd - 1.5 Years</h3>
-  <p className='m-0'>Bangalore</p>
-  </div>
-  
-  <div className='flex items-center justify-between'>
-    <p className='m-0'>Software Engineer 1</p>
-    <p className='m-0'>July 2021 - Nov 2022</p>
-  </div>
-  <ol className="list-decimal list-inside text-gray-300 space-y-2 text-justify">
-    <li className='pt-3'>Worked on a major CRM model at the time Voice Outbound Dialer application which was implemented using Spring MVC.</li>
-    <li>Worked on many client projects full stack web application developer and got the positive feedback from the customers.</li>
-    <li>Got opportunity to gain expoture on multiple AWS Services like AWS Lambda, EC2 Instances and S3 buckets.</li>
-    <li>Got recognized as best employee for quickly adopting new technologies and delivering quality work.</li>
-  </ol>
-</div>
-
+</div> */}
 
 {/* Blog section */}
-<div className='max-w-5xl mx-auto pt-54 pb-40' id="Blog">
+{/* <div className='max-w-5xl mx-auto pt-54 pb-40' id="Blog">
       <h1 className="text-3xl font-bold text-center mt-[-74px] mb-20">Blog Write-ups</h1>
     <div className="space-y-2">
     <details className="group [&_summary::-webkit-details-marker]:hidden">
@@ -428,10 +403,10 @@ export default function Home() {
       </div>
     </details>
   </div>
-</div>
+</div> */}
 
 {/* Contact section */}
-<div className='max-w-5xl mx-auto pt-54 pb-40' id="Contact">
+{/* <div className='max-w-5xl mx-auto pt-54 pb-40' id="Contact">
   <h2 className='text-3xl font-semibold text-center'>Contact Me</h2>
   <div className='flex justify-center mt-10 gap-10 pt-6'>
     <a href='https://github.com/shashankrp' target='_blank' className='text-black'>
@@ -444,10 +419,10 @@ export default function Home() {
     <Icon component={OutgoingMailIcon} style={{ fontSize: 70, color: 'white' }} />
     </a>
   </div>
-</div>
+</div> */}
 
 {/* About section */}
-<div className='mt-40 max-w-5xl mx-auto pt-20 pb-5' id="About">
+{/* <div className='mt-40 max-w-5xl mx-auto pt-20 pb-5' id="About">
   <h2 className='text-3xl font-semibold text-center'>About Me</h2>
   <div className='flex flex-col md:flex-row items-start gap-8'>
   <div className='w-full md:w-2/3 space-y-6'>
@@ -501,7 +476,7 @@ export default function Home() {
             />
 </div>
 </div>
-</div>
+</div> */}
       </div>
     </div>
   );
