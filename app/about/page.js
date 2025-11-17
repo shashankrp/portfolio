@@ -32,6 +32,7 @@ function page(props) {
         I’m always open to new opportunities, collaborations, and conversations about technology. If you’re interested in working together or simply want to chat about the latest in software development, feel free to reach out. I’m excited to connect and explore how we can create something amazing together!
 
       </div>
+<a href="https://shashankrp.github.io">Learn more</a>
     </div>
   )
 }
