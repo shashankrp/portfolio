@@ -27,7 +27,7 @@ export default function Home() {
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Shashank R P</span>
               {/* <img
                 alt=""
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
@@ -492,7 +492,7 @@ export default function Home() {
 </div>
 <div className='w-full md:w-1/3 flex justify-center md:justify-end m-auto'>
   <Image
-              className='rounded shadow img-fluid mb-4 hero-image'
+              className='rounded shadow img-fluid mb-4 hero-image drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]'
               src={image}
               alt="background"
               width={400}
