@@ -102,17 +102,34 @@ export default function Home() {
                     Log in
                   </a>
                 </div> */}
-                <div className='flex justify-center mt-10 gap-10 pt-6'>
-    <a href='https://github.com/shashankrp' target='_blank' className='text-black'>
-    <Icon component={GitHubIcon} style={{ fontSize: 65, color: 'white' }} />
-    </a>
-    <a href='https://www.linkedin.com/in/shashank-r-p-5a866b15a/' target='_blank' className='text-black'>
-    <Icon component={LinkedInIcon} style={{ fontSize: 70, color: 'white' }} />
-    </a>
-    <a href='mailto:shashankrp2@gmail.com' target='_blank' className='text-black'>
-    <Icon component={OutgoingMailIcon} style={{ fontSize: 70, color: 'white' }} />
-    </a>
-  </div>
+        <div
+  className="flex justify-center gap-10 pt-6 fixed bottom-0 left-1/2 transform -translate-x-1/2 text-center"
+>
+  <a
+    href="https://github.com/shashankrp"
+    target="_blank"
+    className="text-black"
+  >
+    <Icon component={GitHubIcon} style={{ fontSize: 45, color: "white" }} />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/"
+    target="_blank"
+    className="text-black"
+  >
+    <Icon component={LinkedInIcon} style={{ fontSize: 45, color: "white" }} />
+  </a>
+
+  <a
+    href="mailto:shashankrp2@gmail.com"
+    target="_blank"
+    className="text-black"
+  >
+    <Icon component={OutgoingMailIcon} style={{ fontSize: 45, color: "white" }} />
+  </a>
+</div>
+
               </div>
             </div>
           </DialogPanel>
