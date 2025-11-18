@@ -32,7 +32,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
          {/* Google tag (gtag.js) */}
 
-{/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-KNSHEPXN7W" strategy="afterInteractive" />
+<Script src="https://www.googletagmanager.com/gtag/js?id=G-KNSHEPXN7W" strategy="afterInteractive" />
 
 <Script id="google-analytics" strategy="afterInteractive">
   {`
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   gtag("config", "G-KNSHEPXN7W")
   `}
-</Script> */}
+</Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Headers />
