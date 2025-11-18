@@ -145,7 +145,7 @@ export default function Home() {
             "React",
             "Next.js",
             "JavaScript",
-            "TypeScript",
+            "Django",
             "TailwindCSS",
             "AWS",
             "Python",
