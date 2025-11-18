@@ -126,12 +126,12 @@ export default function Home() {
               cloud integration, and performance optimization.
             </p>
 
-            <a
+            {/* <a
               href="/about"
               className="inline-block bg-cyan-600 hover:bg-cyan-500 px-6 py-3 rounded-lg text-white font-semibold transition"
             >
               Learn More About Me →
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
