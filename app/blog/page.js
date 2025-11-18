@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Headers from '../headers'
 
 export default function Page() {
   const info = [
@@ -26,7 +27,8 @@ export default function Page() {
   ]
 
   return (
-    <div className='max-w-5xl mx-auto pt-40 pb-40'>
+    <div className='max-w-5xl mx-auto pt-40 pb-40 text-black'>
+      <Headers />
       <h1 className='text-[45px] mb-6'>Technical Blogs</h1>
 
       {/* GRID → 4 per row */}
@@ -35,9 +37,9 @@ export default function Page() {
         {info.map((item, index) => (
           <div 
             key={index} 
-            className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-5 shadow-md hover:shadow-xl transition"
+            className="bg-white/10 backdrop-blur-lg border border-black/20 rounded-xl p-5 shadow-md hover:shadow-xl transition"
           >
-            <a href={item.url} className="text-white no-underline block">
+            <a href={item.url} className="text-black no-underline block">
               <h2 className="text-lg font-semibold">{item.title}</h2>
 
               <p className="pt-3 pb-4 text-sm" style={{ textAlign: "justify" }}>

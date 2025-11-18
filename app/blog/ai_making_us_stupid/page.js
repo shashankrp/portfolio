@@ -1,9 +1,10 @@
 import React from 'react'
+import Headers from '../../headers'
 
 export default function Page() {
   return (
-    <div className="relative max-w-4xl mx-auto pt-32 pb-32 px-4 text-white">
-
+    <div className="relative max-w-4xl mx-auto pt-32 pb-32 px-4 text-black">
+      <Headers />
       {/* BACKGROUND GRADIENT BLOB */}
       <div
         aria-hidden="true"
@@ -65,10 +66,10 @@ export default function Page() {
       </div>
 
       {/* BACK / NEXT BUTTONS */}
-      <div className="flex justify-between mt-8">
+      <div className="flex justify-between mt-8 text-black">
         <a
           href="../blog/whatsapp_media"
-          className="bg-white/10 border border-white/20 backdrop-blur-md text-white py-3 px-6 rounded-xl shadow-md hover:bg-white/20 transition-all duration-300"
+          className="bg-white/10 border border-white/20 backdrop-blur-md py-3 px-6 rounded-xl shadow-md hover:bg-white/20 transition-all duration-300"
         >
           <div className="text-left">
             <strong className="block">Back</strong>

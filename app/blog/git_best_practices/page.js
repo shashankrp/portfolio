@@ -1,9 +1,10 @@
 import React from "react";
+import Headers from '../../headers'
 
 export default function Page() {
   return (
-    <div className="relative max-w-4xl mx-auto pt-32 pb-32 px-4 text-white">
-
+    <div className="relative max-w-4xl mx-auto pt-32 pb-32 px-4 text-black">
+    <Headers />
       {/* BACKGROUND BLOB */}
       <div
         aria-hidden="true"
@@ -62,10 +63,10 @@ export default function Page() {
       </div>
 
       {/* NAV */}
-      <div className="flex justify-end mt-8">
+      <div className="flex justify-end mt-8 text-black">
         <a
           href="../blog/ghibli_style_images"
-          className="bg-white/10 border border-white/20 backdrop-blur-md text-white py-3 px-6 rounded-xl shadow-md hover:bg-white/20 transition"
+          className="bg-white/10 border border-white/20 backdrop-blur-md py-3 px-6 rounded-xl shadow-md hover:bg-white/20 transition"
         >
           <strong className="block">Next</strong>
           <span className="text-sm opacity-80">Ghibli Style Images</span>
