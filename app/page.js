@@ -202,19 +202,37 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
                     <span className="text-green-300 font-bold">⚛️</span>
-                    <span className="text-gray-200">React JS <span className="ml-2 text-xs">80%</span></span>
+                    <span className="text-gray-200">React JS 
+                      {/* <span className="ml-2 text-xs">80%</span> */}
+                      </span>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
                     <span className="text-green-300 font-bold">🎨</span>
-                    <span className="text-gray-200">Tailwind CSS <span className="ml-2 text-xs">45%</span></span>
+                    <span className="text-gray-200">Tailwind CSS 
+                      {/* <span className="ml-2 text-xs">45%</span> */}
+                      </span>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
                     <span className="text-green-300 font-bold">☁️</span>
-                    <span className="text-gray-200">AWS Services <span className="ml-2 text-xs">50%</span></span>
+                    <span className="text-gray-200">AWS Services 
+                      {/* <span className="ml-2 text-xs">50%</span> */}
+                      </span>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
                     <span className="text-green-300 font-bold">🐍</span>
-                    <span className="text-gray-200">Python <span className="ml-2 text-xs">60%</span></span>
+                    <span className="text-gray-200">Python 
+                      {/* <span className="ml-2 text-xs">60%</span> */}
+                      </span>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
+                    <span className="text-green-300 font-bold">🐚</span>
+                    <span className="text-gray-200">Shell Scripting 
+                      </span>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
+                    <span className="text-green-300 font-bold">🛠️</span>
+                    <span className="text-gray-200">Burp Suite and Bruno 
+                      </span>
                   </div>
                 </div>
               </div>
