@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
       <meta name="robots" content="all" />
       <meta name="description" content="Hello, I am Shashank and am a Software engineer with 4+ years of experience in Full Stack Developer and currently working at Ellucian." />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossOrigin="anonymous"></link>
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></Script> */}
 
