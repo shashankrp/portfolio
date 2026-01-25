@@ -1,13 +1,14 @@
-'use client'
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline'
-import image from '../public/assets/images/shashank.jpg';
+"use client";
 import Image from "next/image";
-import Icon from '@mui/material/Icon';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import OutgoingMailIcon from '@mui/icons-material/OutgoingMail';
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import OutgoingMailIcon from "@mui/icons-material/OutgoingMail";
+import Icon from "@mui/material/Icon";
+import photo from "../public/assets/images/shashank.jpg";
+import Headers from "./headers";
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -20,7 +21,8 @@ const navigation = [
 ]
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="bg-gray-900 scroll-smooth">
       {/* <header className="absolute inset-x-0 top-0 z-50"> */}
@@ -37,50 +39,60 @@ export default function Home() {
               Shashank R P
             </a>
           </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
+
+          {/* Text */}
+          <div className="w-full md:w-1/2 space-y-6">
+            <h1 className="text-5xl font-semibold leading-tight">
+              Hi, I'm <span className="text-cyan-400">Shashank R P</span>
+            </h1>
+
+            {/* Terminal-Style Intro */}
+            <div className="bg-black border border-gray-700 rounded-lg p-4 font-mono text-sm shadow-lg">
+              <p className="text-gray-400"> role: Full Stack Developer</p>
+              <p className="text-gray-400">experience: <span className="text-cyan-400">4+ years</span>
+              </p>
+              <p className="text-gray-400">specialization: <span className="text-cyan-400">React, Next.js</span>
+              </p>
+              <p className="text-gray-400"> current: Software Engineer @ Ellucian</p>
+            </div>
+
+            <p className="text-black text-lg leading-relaxed">
+              I build scalable, modern applications with clean UX and strong
+              engineering principles. Passionate about frontend architecture,
+              cloud integration, and performance optimization.
+            </p>
+
+            {/* <a
+              href="/about"
+              className="inline-block bg-cyan-600 hover:bg-cyan-500 px-6 py-3 rounded-lg text-black font-semibold transition"
             >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-6" />
-            </button>
+              Learn More About Me →
+            </a> */}
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
-                {item.name}
-              </a>
-            ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing" target='_blank' className="text-sm/6 font-semibold text-white">
-              <ArrowDownTrayIcon aria-hidden="true" className="h-5 w-5 inline-block mr-2" />Resume
-            </a>
-          </div>
-        </nav>
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Shashank RP</span>
-                {/* <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  className="h-8 w-auto"
-                /> */}
-                Shashank R P
-              </a>
-              <button
-                type="button"
-                onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-gray-200"
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon aria-hidden="true" className="size-6" />
-              </button>
+        </div>
+      </section>
+
+      {/* SKILLS SECTION */}
+      <section className="mt-24 px-6 lg:px-20 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold">Skills</h2>
+
+        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          {[
+            "React",
+            "Next.js",
+            "JavaScript",
+            "Django",
+            "TailwindCSS",
+            "AWS",
+            "Python",
+            "Git",
+          ].map((skill) => (
+            <div
+              key={skill}
+              className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-center text-white
+              hover:border-cyan-400 hover:text-cyan-300 transition"
+            >
+              {skill}
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-white/10">
@@ -538,6 +550,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <footer className="text-center text-gray-500 mt-20 py-10">
+        © {new Date().getFullYear()} • Built by Shashank R P
+      </footer>
     </div>
   );
 }
