@@ -57,7 +57,7 @@ export default function Home() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing" target='_blank' rel="noopener noreferrer" className="text-sm/6 font-semibold text-white">
+            <a href="#" onClick={() => window.open('https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing', '_blank')} target='_blank' rel="noopener noreferrer" className="text-sm/6 font-semibold text-white">
               <ArrowDownTrayIcon aria-hidden="true" className="h-5 w-5 inline-block mr-2" />Resume
             </a>
           </div>
@@ -109,7 +109,8 @@ export default function Home() {
                   className="flex justify-center gap-10 pt-6 fixed bottom-0 left-1/2 transform -translate-x-1/2 text-center"
                 >
                   <a
-                    href="https://github.com/shashankrp"
+                    href="#"
+                    onClick={() => window.open('https://github.com/shashankrp', '_blank')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black"
@@ -118,7 +119,8 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/"
+                    href="#"
+                    onClick={() => window.open('https://www.linkedin.com/in/shashank-r-p-5a866b15a/', '_blank')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black"
@@ -127,7 +129,8 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="mailto:shashankrp2@gmail.com"
+                    href="#"
+                    onClick={() => window.location = 'mailto:' + ['shashankrp2','gmail.com'].join('@')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black"
@@ -469,7 +472,8 @@ export default function Home() {
                   </div>
                 </div>
                 <a
-                  href='https://shashankrp.github.io/'
+                  href='#'
+                  onClick={() => window.open('https://shashankrp.github.io/', '_blank')}
                   className="inline-block mt-8 px-6 py-2 rounded-lg bg-cyan-500 text-white font-semibold shadow hover:bg-cyan-400 transition-all duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -491,10 +495,10 @@ export default function Home() {
                   <h2 className="text-3xl font-bold text-blue-300">Contact Me</h2>
                 </div>
                 <div className="flex justify-center gap-10 pt-6">
-                  <a href='https://github.com/shashankrp' target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition-all duration-300'>
+                  <a href='#' onClick={() => window.open('https://github.com/shashankrp', '_blank')} target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition-all duration-300'>
                     <Icon component={GitHubIcon} style={{ fontSize: 65, color: 'white' }} />
                   </a>
-                  <a href='https://www.linkedin.com/in/shashank-r-p-5a866b15a/' target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition-all duration-300'>
+                  <a href='#' onClick={() => window.open('https://www.linkedin.com/in/shashank-r-p-5a866b15a/', '_blank')} className='hover:scale-110 transition-all duration-300'>
                     <Icon component={LinkedInIcon} style={{ fontSize: 70, color: 'white' }} />
                   </a>
                   <a href='#' onClick={() => window.location = 'mailto:' + ['shashankrp2','gmail.com'].join('@')} target='_blank' className='hover:scale-110 transition-all duration-300' rel="noopener noreferrer">
