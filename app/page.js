@@ -1,41 +1,42 @@
 "use client";
+
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import OutgoingMailIcon from "@mui/icons-material/OutgoingMail";
-import Icon from "@mui/material/Icon";
+import { useState, useMemo } from "react";
 import image from "../public/assets/images/shashank.jpg";
-import Headers from "./headers";
+
+const Dialog = dynamic(() => import("@headlessui/react").then(mod => mod.Dialog), { ssr: false });
+const DialogPanel = dynamic(() => import("@headlessui/react").then(mod => mod.DialogPanel), { ssr: false });
+const Bars3Icon = dynamic(() => import("@heroicons/react/24/outline").then(mod => mod.Bars3Icon), { ssr: false });
+const XMarkIcon = dynamic(() => import("@heroicons/react/24/outline").then(mod => mod.XMarkIcon), { ssr: false });
+const ArrowDownTrayIcon = dynamic(() => import("@heroicons/react/24/outline").then(mod => mod.ArrowDownTrayIcon), { ssr: false });
+const GitHubIcon = dynamic(() => import("@mui/icons-material/GitHub"), { ssr: false });
+const LinkedInIcon = dynamic(() => import("@mui/icons-material/LinkedIn"), { ssr: false });
+const OutgoingMailIcon = dynamic(() => import("@mui/icons-material/OutgoingMail"), { ssr: false });
+const Icon = dynamic(() => import("@mui/material/Icon"), { ssr: false });
 
 const navigation = [
   { name: 'Home', href: '#' },
   { name: 'Skills', href: '#Skills' },
   { name: 'Experience', href: '#Experience' },
   { name: 'Blog', href: '#Blog' },
-  { name: 'Cyber Security', href: '#CyberSecurity' }, // Add this line
+  { name: 'Cyber Security', href: '#CyberSecurity' },
   { name: 'Contact', href: '#Contact' },
   { name: 'About', href: '#About' },
-]
+];
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // Memoize navigation to avoid unnecessary re-renders
+  const navItems = useMemo(() => navigation, []);
 
   return (
     <div className="bg-gray-900 scroll-smooth">
-      {/* <header className="absolute inset-x-0 top-0 z-50"> */}
       <header className="fixed inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Shashank R P</span>
-              {/* <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
-              /> */}
               Shashank R P
             </a>
           </div>
@@ -50,7 +51,7 @@ export default function Home() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
+            {navItems.map((item) => (
               <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
                 {item.name}
               </a>
@@ -68,11 +69,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Shashank RP</span>
-                {/* <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  className="h-8 w-auto"
-                /> */}
+                {/* <img alt="" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" className="h-8 w-auto" /> */}
                 Shashank R P
               </a>
               <button
@@ -215,16 +212,17 @@ export default function Home() {
                       {/* <span className="ml-2 text-xs">45%</span> */}
                       </span>
                   </div>
+                  
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
+                    <span className="text-green-300 font-bold">☕︎</span>
+                    <span className="text-gray-200">Java and Spring Boot
+                      {/* <span className="ml-2 text-xs">60%</span> */}
+                      </span>
+                  </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
                     <span className="text-green-300 font-bold">☁️</span>
                     <span className="text-gray-200">AWS Services 
                       {/* <span className="ml-2 text-xs">50%</span> */}
-                      </span>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
-                    <span className="text-green-300 font-bold">🐍</span>
-                    <span className="text-gray-200">Python 
-                      {/* <span className="ml-2 text-xs">60%</span> */}
                       </span>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-green-400 flex items-center gap-3 hover:scale-105 transition-all duration-300">
@@ -253,27 +251,28 @@ export default function Home() {
                   <h2 className="text-3xl font-bold text-yellow-300">Experience - 4.8 Years</h2>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-yellow-400 mb-4">
-                  <h3 className="m-0 text-xl font-semibold text-yellow-200">Ellucian Higher Education System - 3.3 Years<span className="ml-2 text-xs text-gray-300">Bangalore</span></h3>
+                  <h3 className="m-0 text-xl font-semibold text-yellow-200">Ellucian Higher Education System - 3.5 Years<span className="ml-2 text-xs text-gray-300">Bangalore</span></h3>
                   <p className="m-0 text-gray-200">Software Engineer 1 <span className="ml-2 text-xs">Nov 2022 - Present</span></p>
                   <ol className="list-decimal list-inside text-gray-300 space-y-2 text-justify mt-2">
-                    <li className='pt-3'>Developed and enhanced Data Connect pipelines, implementing new features and optimizing existing workflows to support scalable and reliable data movement across systems.</li>
-                    <li>Performed comprehensive unit testing (UT) for all pipeline components, ensuring code stability and compliance with development standards.</li>
-                    <li>Prepared detailed Unit Test (UT) documentation, using clear technical writing and AI-assisted tools to improve documentation quality and consistency.</li>
-                    <li>Collaborated closely with cross-functional teams, including developers, product owners, and QA engineers, to clarify requirements, validate functionality, and resolve pipeline-related issues.</li>
-                    <li>Supported QA team in functional and regression testing, assisting in debugging, test case validation, and ensuring sprint deliverables met acceptance criteria.</li>
-                    <li>Leveraged AI tools for debugging, documentation, and development acceleration, improving productivity and reducing turnaround time on complex tasks.</li>
-                    <li>Delivered all tasks within sprint timelines, adhering to Agile methodologies and actively contributing to sprint planning, daily stand-ups, and retrospective discussions.</li>
-                    <li>Proactively identified pipeline issues and proposed enhancements, contributing to improved performance, maintainability, and team efficiency.</li>
+                    <li className='pt-3'>Engineered and maintained RESTful APIs using Spring Boot and Java, reducing recurring integration issues by approximately 30% through root-cause analysis and targeted fixes.</li>
+                    <li>Designed and implemented mock API frameworks to decouple testing from upstream dependencies, cutting integration test cycle time by ~40% and enabling parallel development across teams.</li>
+                    <li>Prototyped AWS-based cloud deployment pipelines (EC2, S3) to improve deployment speed and cloud readiness for production releases.</li>
+                    <li>Introduced AI-assisted development workflows (GitHub Copilot, LLM tooling) that increased individual engineering throughput by an estimated 25%.</li>
+                    <li>Collaborated cross-functionally with product, QA, and business teams to define API contracts, write technical documentation, and accelerate partner onboarding.</li>
+                    <li>Implemented comprehensive unit and integration test suites using JUnit and Mockito, improving code coverage and reducing post-release defect rates.</li>
+                    <li>Streamlined development and release processes by introducing standardized branching strategies and code review practices using Git.</li>
                   </ol>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-yellow-400">
                   <h3 className="m-0 text-xl font-semibold text-yellow-200">Voicera Analytics Pvt Ltd - 1.5 Years <span className="ml-2 text-xs text-gray-300">Bangalore</span></h3>
                   <p className="m-0 text-gray-200">Software Engineer 1 <span className="ml-2 text-xs">July 2021 - Nov 2022</span></p>
                   <ol className="list-decimal list-inside text-gray-300 space-y-2 text-justify mt-2">
-                    <li className='pt-3'>Worked on a major CRM model at the time Voice Outbound Dialer application which was implemented using Spring MVC.</li>
-                    <li>Worked on many client projects full stack web application developer and got the positive feedback from the customers.</li>
-                    <li>Got opportunity to gain expoture on multiple AWS Services like AWS Lambda, EC2 Instances and S3 buckets.</li>
-                    <li>Got recognized as best employee for quickly adopting new technologies and delivering quality work.</li>
+                    <li className='pt-3'>Built backend services for a Voice Outbound Dialer application using Spring MVC and Java, handling call orchestration, workflow routing, and telephony event processing.</li>
+                    <li>Developed and deployed RESTful APIs consumed by multiple client-facing web applications built with ReactJS and Node.js, enabling seamless frontend-backend integration.</li>
+                    <li>Implemented JWT-based authentication, role-based access control (RBAC), and session management across multiple web applications, improving security posture.</li>
+                    <li>Leveraged AWS Lambda for serverless business logic components, reducing infrastructure overhead and improving scalability for event-driven workflows.</li>
+                    <li>Managed EC2 instance provisioning, configuration, and maintenance for application hosting; used S3 for static asset storage and environment backups.</li>
+                    <li>Delivered 3+ full-stack client projects end-to-end — from requirement gathering to production deployment — with consistent on-time delivery.</li>
                   </ol>
                 </div>
               </div>
