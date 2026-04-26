@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://shashankrp.in/about</loc><lastmod>2026-04-26T11:18:58.330Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/blog/ai_making_us_stupid</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/blog/ghibli_style_images</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/blog/git_best_practices</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/blog</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/blog/whatsapp_media</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/contact</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/experience</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://shashankrp.in/skills</loc><lastmod>2026-04-26T11:18:58.331Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shashankrp.in</loc><lastmod>2026-04-26T17:13:23.695Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

@@ -1,10 +1,25 @@
 "use client";
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import OutgoingMailIcon from "@mui/icons-material/OutgoingMail";
+import Icon from "@mui/material/Icon";
 
-export default function MobileMenu({ navigation }) {
+const navigation = [
+  { name: 'Home', href: '#' },
+  { name: 'Skills', href: '#Skills' },
+  { name: 'Experience', href: '#Experience' },
+  { name: 'Blog', href: '#Blog' },
+  { name: 'Cyber Security', href: '#CyberSecurity' },
+  { name: 'Contact', href: '#Contact' },
+  { name: 'About', href: '#About' },
+];
+
+export default function MobileMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
       <div className="flex lg:hidden">
@@ -47,6 +62,17 @@ export default function MobileMenu({ navigation }) {
                     {item.name}
                   </a>
                 ))}
+              </div>
+              <div className="py-6 flex justify-center gap-10">
+                <button onClick={() => window.open('https://github.com/shashankrp', '_blank')} className="text-white">
+                  <Icon component={GitHubIcon} style={{ fontSize: 40, color: "white" }} />
+                </button>
+                <button onClick={() => window.open('https://www.linkedin.com/in/shashank-r-p-5a866b15a/', '_blank')} className="text-white">
+                  <Icon component={LinkedInIcon} style={{ fontSize: 40, color: "white" }} />
+                </button>
+                <button onClick={() => window.location = 'mailto:shashankrp2@gmail.com'} className="text-white">
+                  <Icon component={OutgoingMailIcon} style={{ fontSize: 40, color: "white" }} />
+                </button>
               </div>
             </div>
           </div>
