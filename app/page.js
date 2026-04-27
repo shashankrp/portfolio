@@ -1,10 +1,7 @@
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import OutgoingMailIcon from "@mui/icons-material/OutgoingMail";
-import Icon from "@mui/material/Icon";
 import MobileMenu from "./components/MobileMenu";
+import SocialIcons from "./components/SocialIcons";
 import image from "../public/assets/images/shashank.jpg";
 
 const navigation = [
@@ -23,7 +20,7 @@ export default function Home() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Shashank R P</span>
               Shashank R P
             </a>
@@ -394,17 +391,7 @@ export default function Home() {
                   <span className="text-blue-400 text-4xl">📬</span>
                   <h2 className="text-3xl font-bold text-blue-300">Contact Me</h2>
                 </div>
-                <div className="flex justify-center gap-10 pt-6">
-                  <a href="https://github.com/shashankrp" target="_blank" rel="noopener noreferrer" className='hover:scale-110 transition-all duration-300'>
-                    <Icon component={GitHubIcon} style={{ fontSize: 65, color: 'white' }} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/shashank-r-p-5a866b15a/" target="_blank" rel="noopener noreferrer" className='hover:scale-110 transition-all duration-300'>
-                    <Icon component={LinkedInIcon} style={{ fontSize: 70, color: 'white' }} />
-                  </a>
-                  <a href="mailto:shashankrp2@gmail.com" target="_blank" className='hover:scale-110 transition-all duration-300' rel="noopener noreferrer">
-                    <Icon component={OutgoingMailIcon} style={{ fontSize: 70, color: 'white' }} />
-                  </a>
-                </div>
+                <SocialIcons size={65} />
               </div>
             </div>
           </div>
@@ -456,10 +443,11 @@ export default function Home() {
                 <Image
                   className='rounded shadow img-fluid mb-4 hero-image drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]'
                   src={image}
-                  alt="background"
+                  alt="Shashank R P - Software Engineer"
                   width={400}
                   height={400}
-                  placeholder="blur"
+                  priority
+                  quality={80}
                 />
               </div>
             </div>

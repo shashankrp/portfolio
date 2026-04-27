@@ -3,8 +3,15 @@
 const nextConfig = {
     images: {
         formats: ['image/avif', 'image/webp'],
-        domains: ['localhost', 'shashankrp.in'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+            },
+        ],
     },
+    // Enable compression
+    compress: true,
 };
 
 export default nextConfig;
