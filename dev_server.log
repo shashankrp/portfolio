@@ -1,0 +1,26 @@
+
+> my-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 523ms
+
+○ Compiling / ...
+React does not recognize the `alignItems` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `alignitems` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+Received `true` for a non-boolean attribute `item`.
+
+If you want to write it to the DOM, pass a string instead: item="true" or item={value.toString()}.
+Received `true` for a non-boolean attribute `paragraph`.
+
+If you want to write it to the DOM, pass a string instead: paragraph="true" or paragraph={value.toString()}.
+ GET / 200 in 8.5s (next.js: 7.6s, application-code: 888ms)
+[browser] Received `true` for a non-boolean attribute `paragraph`.
+
+If you want to write it to the DOM, pass a string instead: paragraph="true" or paragraph={value.toString()}. 
+[browser] Received `true` for a non-boolean attribute `item`.
+
+If you want to write it to the DOM, pass a string instead: item="true" or item={value.toString()}. 
+[browser] React does not recognize the `alignItems` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `alignitems` instead. If you accidentally passed it from a parent component, remove it from the DOM element. 
+[?25h
