@@ -3,7 +3,7 @@ export const content = {
   title: "Full-stack engineer, problem solver, and tech enthusiast.",
   description: "I love building scalable apps and turning ideas into user-friendly products.",
   resumeLink: "https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing",
-  profileImage: "https://shashankrp.in/_next/static/media/shashank.033c1cb8.jpg",
+  // profileImage: "../public/assets/images/shashank.jpg",
   skills: [
     { name: "React JS", icon: "⚛️" },
     { name: "Tailwind CSS", icon: "🎨" },

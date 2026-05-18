@@ -36,7 +36,8 @@ export default function About() {
           <Grid size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
              <Box 
               component="img"
-              src={content.profileImage}
+              // src={content.profileImage}
+              src="/assets/images/shashank.jpg"
               alt="Shashank R P"
               sx={{ 
                 width: '100%', 
