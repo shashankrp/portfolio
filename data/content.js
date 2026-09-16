@@ -1,23 +1,39 @@
 export const content = {
   name: "Shashank R P",
-  title: "Full-stack engineer, problem solver, and tech enthusiast.",
-  description: "I love building scalable apps and turning ideas into user-friendly products.",
+  title: "Seniour Software engineer, problem solver, and AI enthusiast.",
+  description: "I love Learning about about AI. Currently at Espire, always learning and collaborating.",
   resumeLink: "https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing",
-  // profileImage: "../public/assets/images/shashank.jpg",
+  profileImage: "https://shashankrp.in/_next/static/media/shashank.033c1cb8.jpg",
   skills: [
+     { name: "AI and ML", icon: "🤖" },
+    { name: "RAG", icon: "📃"},
+    { name: "Python", icon: "🐍"},
+    { name: "AWS", icon: "💭"},
     { name: "React JS", icon: "⚛️" },
     { name: "Tailwind CSS", icon: "🎨" },
-    { name: "Java and Spring Boot", icon: "☕︎" },
-    { name: "AWS Services", icon: "☁️" },
     { name: "Shell Scripting", icon: "🐚" },
     { name: "Burp Suite and Bruno", icon: "🛠️" }
   ],
   experience: [
     {
+      company: "Espire Infotech",
+      location: "Bangalore",
+      role: "Senior Software Engineer",
+      period: "July 2026 - Present",
+      duration: "0.3 Years",
+      points: [
+        "Translate functional requirements into maintainable technical solutions for Banner Experience extensions.",
+        "Build React interfaces and integrate platform services through REST APIs.",
+        "Implement JSON mapping, validation, error handling, and secure API interactions.",
+        "Work with SDK/toolkit lifecycle activities including packaging, deployment, versioning, and environment management.",
+        "Contribute to technical design, troubleshooting, performance considerations, and documentation",
+      ]
+    },
+    {
       company: "Ellucian Higher Education System",
       location: "Bangalore",
       role: "Software Engineer 1",
-      period: "Nov 2022 - Present",
+      period: "Nov 2022 - Apr 2026",
       duration: "3.5 Years",
       points: [
         "Engineered and maintained RESTful APIs using Spring Boot and Java, reducing recurring integration issues by approximately 30% through root-cause analysis and targeted fixes.",
@@ -67,21 +83,21 @@ export const content = {
       content: "WhatsApp is one of the most commonly used messaging app in the world and it is used by many people for many purposes. It is used for chatting, calling and sharing medias this also provides the feature of communicating with multiple people at a time. It is a great tool for people who are looking for help in their work.\n\nWhatsApp, the Meta instant messaging platform is working on a new feature that makes chats more privacy feature will allow the users to prevent the recipient from saving images and videos in a conversation on their device.\n\nThis is similar to the Disappearing Message functionally, where a user can only view a photo or video with no way to downalod it. Apart from disabling media download,the new advanced chat privacy feature will also place restrictions on the chat exports.\n\nFor those unaware, WhatsApp currently allows users to export there chat hostory with someone. But when the new feature rolls out, you won't be able to export the chat history of users that has the new privacy feature enabled.\n\nAnother downside is that when advanced chat history is enabled, participants won't be able to use Meta AI in any way. This would change the way that we are using the whatsapp."
     }
   ],
-  cyberSecurity: {
-    description: "I’m passionate about cyber security—protecting data, applications, and users from threats. I regularly explore best practices, vulnerability assessments, and the latest security trends.",
+  ai: {
+    description: "I’m passionate about AI and continuously explore and apply industry best practices.",
     skills: [
-      "Penetration Testing & Vulnerability Assessment",
-      "Secure Coding Practices",
-      "Network Security & Firewalls",
-      "Cloud Security (AWS)",
-      "Incident Response & Threat Analysis",
-      "Security Automation & Tools (OWASP, Burp Suite, etc.)"
+      "Built a local LLM-powered coding assistant for interacting with and querying a software project codebase.",
+      "Implemented codebase indexing and semantic retrieval using Ollama embeddings and ChromaDB.",
+      "Built RAG workflows for implementation, architecture, testing, and related-file questions.",
+      "Added query-intent classification and architectural-role metadata to improve retrieval targeting.",
+      "Implemented targeted semantic retrieval and intent-aware reranking",
+      "Built evaluation workflows measuring Top-1 and Top-5 retrieval performance."
     ],
-    moreLink: "https://shashankrp.github.io/"
+    moreLink: "https://me.developers.google.com/u/106640053379147863989"
   },
   about: {
     title: "Hi, I'm Shashank RP 👋",
-    description: "I'm a full-stack software engineer with 5+ years of experience, currently building scalable apps. I love turning ideas into reliable, user-friendly products.",
+    description: "I'm a Senior software engineer with 5+ years of experience, currently learning AI. I love turning ideas into reliable, user-friendly products.",
     whatIDo: "I work across the stack—ReactJS, Node.js, Python(Django), Java(Spring Boot), AWS, and more. Whether it’s crafting interactive UIs or building robust backends, I enjoy solving real-world problems with clean, maintainable code.",
     approach: "I believe in continuous learning and teamwork. I stay up-to-date with new tech, love collaborating, and always aim to deliver solutions that make a difference."
   },

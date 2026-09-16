@@ -15,25 +15,25 @@ export default function About() {
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
               {content.about.title}
             </Typography>
-            <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem' }}>
+            <Typography variant="body1" paragraph="true" sx={{ fontSize: '1.1rem' }}>
               {content.about.description}
             </Typography>
             
             <Typography variant="h6" gutterBottom sx={{ mt: 4, fontWeight: 'bold' }}>
               What do I do?
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" paragraph="true">
               {content.about.whatIDo}
             </Typography>
 
             <Typography variant="h6" gutterBottom sx={{ mt: 4, fontWeight: 'bold' }}>
               My Approach
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" paragraph="true">
               {content.about.approach}
             </Typography>
           </Grid>
-          <Grid size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+          {/* <Grid size={{ xs: 12, md: 4 }} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
              <Box 
               component="img"
               // src={content.profileImage}
@@ -46,7 +46,7 @@ export default function About() {
                 boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1)'
               }}
             />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Box>

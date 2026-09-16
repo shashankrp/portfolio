@@ -9,7 +9,7 @@ export default function Experience() {
     <Box id="experience" sx={{ py: 8, backgroundColor: '#f9fafb' }}>
       <Container maxWidth="lg">
         <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold', mb: 4, display: 'flex', alignItems: 'center', gap: 1 }}>
-          🏢 Experience - 4.8 Years
+          🏢 Experience - 5.2 Years
         </Typography>
         
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
