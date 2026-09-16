@@ -63,7 +63,7 @@ export default function Navbar() {
                 {item.name}
               </Button>
             ))}
-            <Button variant="contained" color="primary" href="https://drive.google.com/file/d/1gzb3m_BdrhNwRfRFuF7IblGXIHCnRZip/view?usp=sharing" target="_blank" sx={{ textTransform: 'none' }}>
+            <Button variant="contained" color="primary" href="https://drive.google.com/file/d/1uhmbpHRq6LjxwHuv4Qx2i74TKL2PExoo/view?usp=sharing" target="_blank" sx={{ textTransform: 'none' }}>
               Resume
             </Button>
           </Box>
